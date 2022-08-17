@@ -27,6 +27,4 @@ Y la tercera proyeccion pero no menos importantes ser una herramienta para estos
 - [JavaScript](https://www.w3schools.com/js/js_intro.asp)
 - [PHP](https://www.php.net/manual/es/)
 - [MySql]()
-
-# Codigo extraidos desde: <br />
-[Link a los Codigos](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- [Python](https://www.w3schools.com/python/python_mysql_getstarted.asp)
