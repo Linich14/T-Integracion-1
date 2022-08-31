@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head> <!-- Etiquetas meta + enlace archivo css-->
         <style></style>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/styles.css">
-        <title>Bienvenid@ a FEUCT</title>
+        <script src="scripts/fauctscripts.js"></script>
+        <title>Bienvenid@ a FEUCT!</title>
     </head>
-<body>
-    <h1>Hola!</h1>
-    <h2>testing de branch develop</h2>
-    <pre>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Nostrum error ipsum temporibus excepturi reiciendis, 
-        voluptas debitis distinctio dolorum totam saepe et, 
-        commodi aspernatur delectus soluta repellendus, quia adipisci accusamus ipsa?
-    </pre>
-    <h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Eum est quos beatae, laudantium dolore quia?
-        Quia sit atque neque consequuntur sunt eveniet ex error voluptates!
-        Quam beatae laudantium qui obcaecati.
-    </h3>
+
+<body> 
+    <header>
+        <div><img src="images/logo-uct.png" alt='logo'></div>
+    
+    <div class="todo_menu"> <!-- menu de inicio -->
+        <div class="menu">
+            <nav> <!-- Menu + logo-->
+                <ul>
+                    <li><a href:"home.html" class:"logo"></a>
+                    <span class:"nav-item"></span>
+                        <ul>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </li>
+                </ul> 
+            </nav>
+        </div>
+    </div>
+    </header>
+    <div class="formulario">
+        <form>
+            <h4><i>Bienvenido a FAUCT!</i></h4>
+            <input type="text" id="nombre" placeholder="Nombre de usuario">
+            <hr><hr>
+            <input type="text" id="contrasena" placehorder="Contraseña">
+            <hr>
+            <button type="submit" onclick="">Ingresar</button>
+        </form>
+
 </body>
 </html>
