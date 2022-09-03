@@ -1,0 +1,30 @@
+body{
+    background-image: url(/images/fondo1.jpg);
+    background-color: rgb(0, 110, 255);
+
+    background-size: auto;
+}
+
+header img{
+    width:450px;
+    height:150px;
+}
+header{
+    background: rgba(130, 166, 233, 0.85);
+
+}
+nav{
+    background-color: rgba(239, 247, 168, 0.89);    
+}
+
+footer img{
+    width:450px;
+    height:150px;
+}
+footer{
+    background-color: rgba(239, 247, 168, 0.89);    
+}
+
+body{
+    background-color: transparent;
+}
