@@ -25,29 +25,18 @@ header img {
     /* Alto imagen del Header */
 }
 
-header>div>div>div>ul>li:first-child:hover {
+.d-block {
+    height: 1px;
+}
+header>div>div>div>ul>li:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
 }
 
-header>div>div>div>ul>li:nth-child(2):hover {
-    transform: scale(1.1);
-}
-
-header>div>div>div>ul>li:nth-child(3):hover {
-    transform: scale(1.1);
-}
-
-header>div>div>div>ul>li:nth-child(4):hover {
-    transform: scale(1.1);
-}
-
-header>div>div>div>ul>li:nth-child(5):hover {
-    transform: scale(1.1);
-}
 
 header>div>div>div>ul>li {
     transition: all 300ms ease;
+    border-radius: 10px;
 }
 
 header {
