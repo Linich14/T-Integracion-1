@@ -24,6 +24,8 @@ Y la tercera proyeccion pero no menos importantes ser una herramienta para estos
 
 - [HTML](https://www.w3schools.com/html/html_intro.asp)
 - [CSS](https://www.w3schools.com/css/css_intro.asp)
+- [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
+- [React.JS](https://es.reactjs.org)
 - [JavaScript](https://www.w3schools.com/js/js_intro.asp)
 - [PHP](https://www.php.net/manual/es/)
 - [MySql]()
