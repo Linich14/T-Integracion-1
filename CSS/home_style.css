@@ -91,3 +91,8 @@ main .mb-3 {
     border-radius: 10px;
     justify-content: center;
 }
+
+article {
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+}
