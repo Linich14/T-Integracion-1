@@ -30,7 +30,7 @@ header {
     background: rgba(130, 166, 233, 0.85);
 
 }
-.d-block {
+header .d-block {
     height: 1px;
 }
 header>div>div>div>ul>li:hover {
