@@ -1,0 +1,42 @@
+body{
+
+background-image: url(https://images4.alphacoders.com/100/1002541.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+h3{
+    
+   height: 120px; 
+   background-image: url(https://www.uct.cl/content/uploads/calendario-academico.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+thead{
+
+    background-color: cornflowerblue;
+}
+
+
+
+ol{
+
+    background-color: burlywood;
+}
+
+p{
+
+    background-color: burlywood;
+}
+
+address{
+
+    background-color: gold;
+}
+
+label{
+
+    background-color: gold;
+}
