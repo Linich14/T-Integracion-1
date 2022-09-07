@@ -1,7 +1,7 @@
 # Foro Academico/Estudiantes UCT
 
 
-![alt text](https://i.imgur.com/93z1Q29.png)
+![alt text](https://i.imgur.com/t2mAiqc.png)
 ![alt text](https://i.imgur.com/dalWDSo.png)
 Esta pagina web tiene como finalidad y proyeccion principal, ser la union de los distintos portales que ofrece la universidad para el alumno con el fin de hacer que la administracion de cuentas por parte del usuario sea mas grata. <br /><br />
 Esto conlleva a que el alumno o profesor tendra una mejor experiencia navegando ya que podra acceder a los distintos portales y funciones en un mismo lugar. La segunda proyeccion principal del proyecto es ser una red social, la cual se espera genere la instancia para que los estudiantes de nuevo ingreso puedan acercarse a sus pares , como tambien para los estudiantes antiguos les sirva para una convivencia con las distintas facultades como a su propia facultad. <br /><br />
