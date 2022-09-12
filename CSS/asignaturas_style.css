@@ -1,8 +1,9 @@
 body{
 
-background-image: url(https://images4.alphacoders.com/100/1002541.jpg);
+background-image: url(https://i.pinimg.com/originals/c0/91/f4/c091f445434d6b7798a039ba220e5b13.jpg);
 background-repeat: no-repeat;
 background-size: cover;
+background-position: center;
 }
 
 h3{
@@ -76,4 +77,9 @@ header {
     /* Color del Header */
     background: rgba(130, 166, 233, 0.85);
 
+}
+
+ul{
+
+    background-color: moccasin;
 }
