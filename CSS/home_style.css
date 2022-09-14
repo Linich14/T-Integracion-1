@@ -1,5 +1,5 @@
 html {
-    background-image: url(./images/fondo1.jpg);
+    background-image: url(/images/fondo1.jpg);
     /* Fondo */
     background-color: rgb(0, 110, 255);
     /* Color de fondo */
