@@ -34,3 +34,23 @@ header {
     background: rgba(130, 166, 233, 0.85);
 
 }
+
+body{
+    
+    background-image: url(https://static.vecteezy.com/system/resources/previews/002/181/980/original/business-people-working-together-coworking-space-with-creative-or-business-people-sitting-at-the-table-flat-modern-illustration-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 100px;
+
+}
+
+h3{
+    
+    height: 120px; 
+    background-image: url(https://www.uct.cl/content/uploads/calendario-academico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+ 
