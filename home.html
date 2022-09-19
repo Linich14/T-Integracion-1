@@ -84,14 +84,25 @@
                                 Perfil
                             </a>
                         </li>
+                        <li>
+                            <a href="foro.html" class="nav-link text-white">
+                                <!--- Perfil -->
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                    <img src="images/foro.png" alt="">
+                                </svg>
+                                Foro
+                            </a>
+                        </li>
                     </ul>
+                    <span id="mas" onclick="zoomIn()">+</span>
+                    <span id="menos" onclick="zoomOut()">-</span>
                 </div>
             </div>
         </div>
     </header>
 
 
-    <main class="container">
+    <main class="container" id="body">
         <!--- Articulo Mayor --->
         <div class="p-4 p-md-5 mb-4 rounded">
             <div class="col-md-6-px-0">
@@ -301,7 +312,9 @@
                             <li><a href="https://www.flickr.com/photos/uc_temuco" target="_blank">Flickr</a></li>
                             <li><a href="https://issuu.com/uc_temuco/stacks" target="_blank">Issuu</a></li>
                             <hr>
-                            <li><div id="timer"></div></li>
+                            <li>
+                                <div id="timer"></div>
+                            </li>
                         </ol>
                     </div>
                 </div>
@@ -337,9 +350,10 @@
             </ul>
         </div>
     </footer>
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script> 
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>  
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="scripts/timer.js"></script>
+    <script src="scripts/fauctscripts.js"></script>
 
 </body>
 
