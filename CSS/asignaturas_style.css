@@ -1,6 +1,8 @@
 body{
 
-background-image: url(https://i.pinimg.com/originals/c0/91/f4/c091f445434d6b7798a039ba220e5b13.jpg);
+background-image: url(/images/fondo1.jpg);
+background-color: rgb(0, 110, 255);
+background-attachment: fixed;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
