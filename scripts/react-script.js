@@ -94,9 +94,9 @@ function calculateWinner(squares) {
       const winner = calculateWinner(current.squares);
       let status;
       if (winner) {
-        status = 'Winner: ' + winner;
+        status = 'Ganador: ' + winner;
       } else {
-        status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+        status = 'Siguiente Jugador: ' + (this.state.xIsNext ? 'X' : 'O');
       }
   
       let moveReset;
@@ -106,18 +106,18 @@ function calculateWinner(squares) {
       history.map((step, move) => {
         let desc;
         if (move === 0) {
-          desc = 'Game Reset';
+          desc = 'Reiniciar Juego';
           moveReset = React.createElement("a", { href: "#", onClick: () => this.jumpTo(move) }, desc);
         } else {
           if (step.xIsNext) {
-            desc = 'Move #' + step;
+            desc = 'Mueve #' + step;
             movesO.push(
             React.createElement("li", { key: move },
             React.createElement("a", { href: "#", onClick: () => this.jumpTo(move) }, desc)));
   
   
           } else {
-            desc = 'Move #' + step;
+            desc = 'Mueve #' + step;
             movesX.push(
             React.createElement("li", { key: move }, /*#__PURE__*/
             React.createElement("a", { href: "#", onClick: () => this.jumpTo(move) }, desc)));
@@ -135,14 +135,14 @@ function calculateWinner(squares) {
   
         React.createElement("div", { className: "game-body" },
         React.createElement("div", { className: "game-left" },
-        React.createElement("div", { className: "title" }, "Player: X"),
+        React.createElement("div", { className: "title" }, "Jugador: X"),
         React.createElement("ol", null, movesX)),
   
         React.createElement("div", { className: "game-main" },
         React.createElement(Board, { squares: current.squares, onClick: i => this.handleClick(i) })),
   
         React.createElement("div", { className: "game-right" },
-        React.createElement("div", { className: "title" }, "Player: O"),
+        React.createElement("div", { className: "title" }, "Jugador: O"),
         React.createElement("ol", null, movesO)))));
   
   
