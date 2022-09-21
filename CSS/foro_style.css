@@ -62,7 +62,7 @@ h3{
 }
 
 section {
-    background-color: rgba(239, 247, 168, 0.89);
+    background-color: skyblue;
 }
 
 #chat4 .form-control {
@@ -81,3 +81,19 @@ section {
     height: 1px;
     background: #eee;
 }
+
+figure{
+
+    position: relative;
+    left: 900px;
+    top: -100px;
+}
+
+.container-xxl{
+
+    position: relative;
+    right: 100px;
+    top:  -150px;
+    
+}
+
