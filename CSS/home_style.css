@@ -1,5 +1,6 @@
 html {
-    background-image: url(./images/fondo1.jpg);
+
+    background-image: url(/images/fondo1.jpg);
     /* Fondo */
     background-color: rgb(0, 110, 255);
     /* Color de fondo */
@@ -8,6 +9,21 @@ html {
     background-attachment: fixed;
     /* Permite el scrolling sin duplicar la imagen */
 }
+
+#menos,
+#mas {
+    position: fixed;
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    width: 35px;
+    padding: 10px;
+    
+}
+
+
 
 header li img {
     /* Imagen del Header */
@@ -25,7 +41,8 @@ header img {
     /* Alto imagen del Header */
 }
 
-.d-block {
+
+header .d-block {
     height: 1px;
 }
 
@@ -55,6 +72,61 @@ footer img {
     /* Imagen del Footer */
     width: 450px;
     height: 150px;
+}
+
+.container {
+    width: 90%;
+    min-height: 30px;
+    
+    margin: 0 auto;
+    overflow: hidden;    
+}
+
+.slider {
+    padding: 40px 0;
+}
+
+.slider_container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;
+}
+
+.slider_body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.0s; 
+}
+
+.slider_body-show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.slider_img{
+    width: 990px;
+    height: 300px;
+    border-radius: 1%;
+    object-fit: cover;
+    display: block;
+}
+
+.slider_arrow{
+    cursor: pointer;
+    width: 90%;
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translate(40%);
+    }
 }
 
 body {

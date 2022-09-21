@@ -15,7 +15,7 @@ class TodoApp extends React.Component {
         React.createElement(
           "h3",
           null,
-          "Tareas pendientes"
+          "¿Se te olvida algo?"
         ),
         e(TodoList, { items: this.state.items }),
         e(
@@ -24,7 +24,7 @@ class TodoApp extends React.Component {
           e(
             "label",
             { htmlFor: "new-todo" },
-            "\xBFQu\xE9 se necesita hacer?"
+            "¡Deja tu nota aqui!"
           ),
           e("input", {
             id: "new-todo",
@@ -34,7 +34,7 @@ class TodoApp extends React.Component {
           e(
             "button",
             null,
-            "A\xF1adir #",
+            "Añadir Nota #",
             this.state.items.length + 1
           )
         )
@@ -76,3 +76,4 @@ class TodoApp extends React.Component {
   }
 const domContainer = document.querySelector('#tareas');  
 ReactDOM.render(e(TodoApp), domContainer);
+

@@ -82,15 +82,22 @@
               </a>
             </li>
           </ul>
+          
         </div>
       </div>
     </div>
-  </header>
+    
 
+  </header>
+  
   <main>
+    
+
+    <!---menu de la izquierda relativo-->
     <div class="card-group">
+      
       <div class="card">
-        <menu class="position-sticky">
+        <menu class="position-fixed">
           <div class="d-flex flex-column flex-shrink-0 p-3  text-white bg-dark" style="width: 280px;">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
               <svg class="bi me-2" width="40" height="32">
@@ -150,7 +157,9 @@
                 <strong>AdminUCT</strong>
               </a>
               <hr>
+              
               <div id="tareas"></div>
+              
               <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
                 <li><a class="dropdown-item" href="#">Pastoral UCT 2022</a></li>
                 <li><a class="dropdown-item" href="#">Tenis de Mesa 2do Semestre</a></li>
@@ -161,17 +170,17 @@
 
             </div>
             
-            
-          </div>
+
+        </div>
           
       </div>
       </menu>
       
-      <!--Section: Newsfeed-->
+      <!--Section nuevas publicaciones-->
       <section>
         <div class="card" style="max-width: 42rem">
           <div class="card-body">
-            <!-- Data -->
+
             <div class="d-flex mb-3">
               <a href="">
                 <img src="images/adminuct.jpg" class="border rounded-circle me-2" alt="Avatar" style="height: 40px" />
@@ -185,7 +194,7 @@
                 </a>
               </div>
             </div>
-            <!-- Description -->
+
             <div>
               <p>
                 Hola nuevos compañeros de grupo, soy el AdminUCT, espero que nos llevemos bien este 
@@ -193,17 +202,16 @@
               </p>
             </div>
           </div>
-          <!-- Media -->
+
           <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
             <img src="images/adminuct.jpg" class="w-100" />
             <a href="#!">
               <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
             </a>
           </div>
-          <!-- Media -->
-          <!-- Interactions -->
+
           <div class="card-body">
-            <!-- Reactions -->
+
             <div class="d-flex justify-content-between mb-3">
               <div>
                 <a href="">
@@ -216,9 +224,7 @@
                 <a href="" class="text-muted"> 8 comments </a>
               </div>
             </div>
-            <!-- Reactions -->
 
-            <!-- Buttons -->
             <div class="d-flex justify-content-between text-center border-top border-bottom mb-4">
               <button type="button" class="btn btn-link btn-lg" data-mdb-ripple-color="dark">
                 <i class="fas fa-thumbs-up me-2"></i>Me Encanta
@@ -228,11 +234,7 @@
               </button>
 
             </div>
-            <!-- Buttons -->
 
-            <!-- Comments -->
-
-            <!-- Input -->
             <div class="d-flex mb-3">
               <a href="">
                 <img src="images/adminuct.jpg" class="border rounded-circle me-2" alt="Avatar" style="height: 40px" />
@@ -242,11 +244,7 @@
                 <label class="form-label" for="textAreaExample">¡Deja un Comentario!</label>
               </div>
             </div>
-            <!-- Input -->
 
-            <!-- Answers -->
-
-            <!-- Single answer -->
             <div class="d-flex mb-3">
               <a href="">
                 <img src="images/nosotros/nicolagos.png" class="border rounded-circle me-2"
@@ -266,7 +264,7 @@
               </div>
             </div>
 
-            <!-- Single answer -->
+
             <div class="d-flex mb-3">
               <a href="">
                 <img src="images/nosotros/jorge.jpg" class="border rounded-circle me-2"
@@ -288,10 +286,10 @@
               </div>
             </div>
 
-            <!-- Single answer -->
+
             <div class="d-flex mb-3">
               <a href="">
-                <img src="images/adminuct.jpg" class="border rounded-circle me-2"
+                <img src="images/nosotros/juan.jpg" class="border rounded-circle me-2"
                   alt="Avatar" style="height: 40px" />
               </a>
               <div>
@@ -317,7 +315,7 @@
               </div>
             </div>
 
-            <!-- Single answer -->
+
             <div class="d-flex mb-3">
               <a href="">
                 <img src="images/adminuct.jpg" class="border rounded-circle me-2"
@@ -338,22 +336,20 @@
               </div>
             </div>
 
-            <!-- Answers -->
 
-            <!-- Comments -->
           </div>
-          <!-- Interactions -->
+
         </div>
       </section>
-      <!--Section: Newsfeed-->
-      <div class="card">
 
+      <div class="card">
+        
         <div class="container py-3">
 
           <div class="row d-flex justify-content-center">
             <div class="col-md-8 col-lg-6 col-xl-4">
 
-              <!-- Buttons trigger collapse -->
+
               <a class="btn btn-info btn-lg btn-block" data-bs-toggle="collapse" href="#collapseExample" role="button"
                 aria-expanded="True" aria-controls="collapseExample">
                 <div class="d-flex justify-content-between align-items-center">
@@ -362,7 +358,7 @@
                 </div>
               </a>
             </div>
-              <!-- Collapsed content -->
+
               <div class="collapse mt-3" id="collapseExample">
                 <div class="card" id="chat4">
                   <div class="card-body" data-bs-perfect-scrollbar="true" style="position: relative;  ;">
@@ -471,13 +467,14 @@
       
     </div>
     </div>
-    
+    <div id="timer"></div>
   </main>
 
-      <!-- To load React add the scripts. --> 
+     
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script> 
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>  
-    <script src="scripts/tareas.js"></script>
+    
 </body>
-
+<script src="scripts/tareas.js"></script>
+<script src="scripts/timer.js"></script>
 </html>

@@ -21,92 +21,127 @@
     <header class="py-3 mb-4 border-bottom">
         <!--- Logo interactivo --->
         <div class="px-3 py-2 ">
-            <div class="container">
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <a href="/"
-                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                        <svg class="bi me-2" width="40" height="32" role="img"><img src="images/logo-uct.png"
-                                alt="?"></svg>
-                    </a>
-                    <!--- Menu interactivo de la dashboard --->
-                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                        <li>
-                            <a href="#" class="nav-link text-secondary">
-                                <!-- Home -->
-                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                                    <img src="./images/homeicon.png" alt="?">
-                                </svg>
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="asignaturas.html" class="nav-link text-white">
-                                <!-- Asignaturas -->
-                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                                    <img src="images/asignaturasicon.png" alt="?">
-                                </svg>
-                                Asignaturas
-                            </a>
-                        </li>
-                        <li>
-                            <a href="groups.html" class="nav-link text-white">
-                                <!--- Grupos -->
-                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                                    <img src="images/groupicon.png" alt="?">
-                                </svg>
-                                Grupos
-                            </a>
-                        </li>
-                        <li>
-                            <a href="chat.html" class="nav-link text-white">
-                                <!--- Chat desplegable --->
-                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                                    <img src="images/chaticon.png" alt="?">
-                                </svg>
-                                Chat
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://webmail.uct.cl" class="nav-link text-white">
-                                <!--- Perfil -->
-                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                                    <img src="images/correoicon.png" alt="?">
-                                </svg>
-                                Correo
-                            </a>
-                        </li>
-                        <li>
-                            <a href="account.html" class="nav-link text-white">
-                                <!--- Perfil -->
-                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                                    <img src="images/perfilicon.png" alt="">
-                                </svg>
-                                Perfil
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img"><img src="images/logo-uct.png" alt="?"></svg>
+              </a>
+              <!--- Menu interactivo de la dashboard --->
+              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                <li>
+                  <a href="home.html" class="nav-link text-secondary">
+                    <!-- Home -->
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                      <img src="/images/homeicon.png" alt="?">
+                    </svg>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="asignaturas.html" class="nav-link text-white">
+                    <!-- Asignaturas -->
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                      <img src="images/asignaturasicon.png" alt="?">
+                    </svg>
+                    Asignaturas
+                  </a>
+                </li>
+                <li>
+                  <a href="groups.html" class="nav-link text-white">
+                    <!--- Grupos -->
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                      <img src="images/groupicon.png" alt="?">
+                    </svg>
+                    Grupos
+                  </a>
+                </li>
+                <li>
+                  <a href="chat.html" class="nav-link text-white">
+                    <!--- Chat desplegable --->
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                      <img src="images/chaticon.png" alt="?">
+                    </svg>
+                    Chat
+                  </a>
+                </li>
+                <li>
+                  <a href="https://webmail.uct.cl" class="nav-link text-white">
+                    <!--- Perfil -->
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                      <img src="images/correoicon.png" alt="?">
+                    </svg>
+                    Correo
+                  </a>
+                </li>
+                <li>
+                  <a href="account.html" class="nav-link text-white">
+                    <!--- Perfil -->
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                      <img src="images/perfilicon.png" alt="">
+                    </svg>
+                    Perfil
+                  </a>
+                </li>
+              </ul>
+              
             </div>
+          </div>
         </div>
-    </header>
+        
+    
+      </header>
+    <span id="mas" onclick="zoomIn()"><i>A</i></span>
+    <br>
+    <br>
+    <span id="menos" onclick="zoomOut()"><i>a</i></span>
+    <!-- Slider -->
+    <section class="slider">
+            <!-- Flecha hacia la izquierda -->
+        <div class="slider_container container">
+            <svg xmlns="http://www.w3.org/2000/svg" fill= "rgba(239, 247, 168, 0.89)" class="slider_arrow" viewBox="0 0 16 16" id="before">
+                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+            </svg>
+            <!-- Imagenes -->
+            <section class="slider_body slider_body-show" data-id="1">            
+                <figure class="slider_picture">
+                    <img src="images/uct1.jpg" class="slider_img" alt="">
+                </figure>
+            </section>
+            
+            <section class="slider_body" data-id="2">        
+                <figure class="slider_picture">        
+                    <img src="images/uctsanfrancisco.jpg" class="slider_img" alt="">
+                </figure>
+            </section>
 
+            <section class="slider_body" data-id="3">        
+                <figure class="slider_picture">        
+                    <img src="images/UCT.jpg" class="slider_img" alt="">
+                </figure>
+            </section>
+            <!-- Flecha hacia la derecha -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="rgba(239, 247, 168, 0.89)" class="slider_arrow" viewBox="0 0 16 16" id="next">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+        </div>
+    </section>
 
-    <main class="container">
+    <main class="container" id="body">
         <!--- Articulo Mayor --->
-        <div class="p-4 p-md-5 mb-4 rounded">
+        <div class="p-4 p-md-5 mb-4 rounded" id="home1">
             <div class="col-md-6-px-0">
                 <h2 class="display-4 fst-italic">Secretos de la araucania</h2>
                 <!--- Titulo --->
-                <p class="lead my-3">Hasta el 3 de septiembre, cultores y cultoras de La Araucanía podrán postular con
+                <p class=" my-3">Hasta el 3 de septiembre, cultores y cultoras de La Araucanía podrán postular con
                     sus obras para presentarse en la tercera versión de este encuentro, que se realizará en noviembre en
                     el CCLM ubicado en el centro de la capital.</p> <!-- Contenido -->
-                <p class="lead mb-0"><a
+                <p class=" mb-0"><a
                         href="https://www.uct.cl/actualidad/noticias/abren-convocatoria-para-feria-secretos-de-la-araucania-2022/"
                         class="fw-bold">Continue leyendo</a></p>
             </div>
         </div>
 
-        <div class="row mb-2">
+        <div class="row mb-2" id="home2">
             <div class="col-md-6">
                 <!--- Sub Articulo izquierdo --->
                 <div
@@ -153,7 +188,7 @@
         </div>
 
         <div class="row g-5">
-            <div class="col-md-8">
+            <div class="col-md-8" id="home3">
                 <!--- Columna de opinion --->
                 <h2 class="pb-4 mb-4 fst-italic text-center text-decoration-underline">
                     Blog
@@ -246,9 +281,8 @@
                     <p>Reemplazamos las coordenadas de nuestros puntos A, B y C en la función objetivo y el mayor valor
                         será la máxima ganancia mientras que la de menor sera la menor ganancia.</p>
 
-
                 </article>
-                <div class="blog-post2">
+                <div class="blog-post2" id="home4">
                     <article class="blog-post">
                         <h2 class="blog-post-title mb-1">Ayuda en Algebra</h2>
                         <p class="blog-post-meta">Ago 31 - 2020 por <a href="#">Alberto Fernandez</a></p>
@@ -300,6 +334,10 @@
                             <li><a href="https://www.youtube.com/user/canaluctemuco" target="_blank">Youtube</a></li>
                             <li><a href="https://www.flickr.com/photos/uc_temuco" target="_blank">Flickr</a></li>
                             <li><a href="https://issuu.com/uc_temuco/stacks" target="_blank">Issuu</a></li>
+                            <hr>
+                            <li>
+                                <div id="timer"></div>
+                            </li>
                         </ol>
                     </div>
                 </div>
@@ -335,7 +373,11 @@
             </ul>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="scripts/timer.js"></script>
+    <script src="scripts/fauctscripts.js"></script>
+    <script src="scripts/animaciones.js"></script>
 
 </body>
 

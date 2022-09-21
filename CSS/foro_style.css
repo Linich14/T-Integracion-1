@@ -14,7 +14,8 @@ header img {
     /* Alto imagen del Header */
 }
 
-.d-block {
+
+header .d-block {
     height: 1px;
 }
 
@@ -34,3 +35,68 @@ header {
     background: rgba(130, 166, 233, 0.85);
 
 }
+
+
+body{
+    
+    background-color: transparent;
+    background-image: url(/images/fondo1.jpg);
+    background-color: rgb(0, 110, 255);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+h3{
+    
+    height: 120px; 
+    background-image: url(https://www.uct.cl/content/uploads/calendario-academico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+ 
+ .card {
+    background-color: transparent;
+}
+
+section {
+    background-color: skyblue;
+}
+
+#chat4 .form-control {
+    border-color: transparent;
+}
+
+#chat4 .form-control:focus {
+    border-color: transparent;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+figure{
+
+    position: relative;
+    left: 900px;
+    top: -100px;
+}
+
+.container-xxl{
+
+    position: relative;
+    right: 100px;
+    top:  -150px;
+    
+}
+
+
