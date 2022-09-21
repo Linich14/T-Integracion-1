@@ -14,6 +14,7 @@ header img {
     /* Alto imagen del Header */
 }
 
+
 header .d-block {
     height: 1px;
 }
@@ -34,6 +35,7 @@ header {
     background: rgba(130, 166, 233, 0.85);
 
 }
+
 
 body{
     
@@ -96,4 +98,5 @@ figure{
     top:  -150px;
     
 }
+
 

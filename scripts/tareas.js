@@ -76,3 +76,4 @@ class TodoApp extends React.Component {
   }
 const domContainer = document.querySelector('#tareas');  
 ReactDOM.render(e(TodoApp), domContainer);
+

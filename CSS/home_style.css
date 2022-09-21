@@ -24,6 +24,7 @@ html {
 }
 
 
+
 header li img {
     /* Imagen del Header */
     width: 40px;
@@ -39,6 +40,7 @@ header img {
     height: 150px;
     /* Alto imagen del Header */
 }
+
 
 header .d-block {
     height: 1px;
