@@ -1,5 +1,6 @@
 html {
-    background-image: url(./images/fondo1.jpg);
+
+    background-image: url(/images/fondo1.jpg);
     /* Fondo */
     background-color: rgb(0, 110, 255);
     /* Color de fondo */
@@ -8,6 +9,17 @@ html {
     background-attachment: fixed;
     /* Permite el scrolling sin duplicar la imagen */
 }
+
+#menos,
+#mas {
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+    background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    padding: 10px;
+}
+
 
 header li img {
     /* Imagen del Header */
@@ -19,9 +31,9 @@ header li img {
 
 header img {
     /* Imagen del Header */
-    width: 450px;
+    width: 300px;
     /* Ancho imagen del Header */
-    height: 150px;
+    height: 100px;
     /* Alto imagen del Header */
 }
 
