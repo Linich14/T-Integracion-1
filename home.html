@@ -91,11 +91,41 @@
             </div>
         </div>
     </header>
+                    <!-- Slider -->
+    <section class="slider">
+            <!-- Flecha hacia la izquierda -->
+        <div class="slider_container container">
+            <svg xmlns="http://www.w3.org/2000/svg" fill= "rgba(239, 247, 168, 0.89)" class="slider_arrow" viewBox="0 0 16 16" id="before">
+                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+            </svg>
+            <!-- Imagenes -->
+            <section class="slider_body slider_body-show" data-id="1">            
+                <figure class="slider_picture">
+                    <img src="images/uct1.jpg" class="slider_img" alt="">
+                </figure>
+            </section>
+            
+            <section class="slider_body" data-id="2">        
+                <figure class="slider_picture">        
+                    <img src="images/uctsanfrancisco.jpg" class="slider_img" alt="">
+                </figure>
+            </section>
 
+            <section class="slider_body" data-id="3">        
+                <figure class="slider_picture">        
+                    <img src="images/UCT.jpg" class="slider_img" alt="">
+                </figure>
+            </section>
+            <!-- Flecha hacia la derecha -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="rgba(239, 247, 168, 0.89)" class="slider_arrow" viewBox="0 0 16 16" id="next">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+        </div>
+    </section>
 
     <main class="container" id="body">
         <!--- Articulo Mayor --->
-        <div class="p-4 p-md-5 mb-4 rounded">
+        <div class="p-4 p-md-5 mb-4 rounded" id="home1">
             <div class="col-md-6-px-0">
                 <h2 class="display-4 fst-italic">Secretos de la araucania</h2>
                 <!--- Titulo --->
@@ -108,7 +138,7 @@
             </div>
         </div>
 
-        <div class="row mb-2">
+        <div class="row mb-2" id="home2">
             <div class="col-md-6">
                 <!--- Sub Articulo izquierdo --->
                 <div
@@ -155,7 +185,7 @@
         </div>
 
         <div class="row g-5">
-            <div class="col-md-8">
+            <div class="col-md-8" id="home3">
                 <!--- Columna de opinion --->
                 <h2 class="pb-4 mb-4 fst-italic text-center text-decoration-underline">
                     Blog
@@ -248,9 +278,8 @@
                     <p>Reemplazamos las coordenadas de nuestros puntos A, B y C en la función objetivo y el mayor valor
                         será la máxima ganancia mientras que la de menor sera la menor ganancia.</p>
 
-
                 </article>
-                <div class="blog-post2">
+                <div class="blog-post2" id="home4">
                     <article class="blog-post">
                         <h2 class="blog-post-title mb-1">Ayuda en Algebra</h2>
                         <p class="blog-post-meta">Ago 31 - 2020 por <a href="#">Alberto Fernandez</a></p>
@@ -345,6 +374,7 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="scripts/timer.js"></script>
     <script src="scripts/fauctscripts.js"></script>
+    <script src="scripts/animaciones.js"></script>
 
 </body>
 
