@@ -18,13 +18,15 @@ const Signin = () => {
   };
 
   useEffect(() => {
-    if (user != null) {
-      navigate('/account');
-    }
+      if (user != null) {
+        navigate('/account');
+      }
+
+      
   }, [user]);
 
   return (
-    <div>
+    <div className='container ' id="containersignin">
     <h1 >Conectate con:</h1>
     <div id="googleo">
       <GoogleButton onClick={handleGoogleSignIn} />

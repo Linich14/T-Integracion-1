@@ -13,7 +13,6 @@ const Photo = () =>{
   return photo;
 }
 
-
 const Account = () => {
   const { logOut, user } = UserAuth();
 
@@ -25,11 +24,14 @@ const Account = () => {
     }
   };
 
+
+
+  console.log(Photo());
   return (
-    <div id="cuenta">
+    <div className="container"id="cuenta">
       <h1  >Cuenta</h1>
-      <div>
       <img src={Photo()} alt="?" ></img>
+      <div>
         <p>Bienvenido, {user?.displayName}</p>
       </div>
       

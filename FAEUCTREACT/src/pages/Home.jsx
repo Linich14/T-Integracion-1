@@ -1,7 +1,7 @@
 import React from 'react'
 import './home.css';
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className='container bg-primary '>
         <div className='flex'><p>hola</p></div>
