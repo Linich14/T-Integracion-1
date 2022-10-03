@@ -1,8 +1,7 @@
-#home{
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
+p{
+    color: blue;
+}
+
+.container{
     
-    background-color: rgba(239, 247, 168, 0.89);
-    text-align: center;
 }

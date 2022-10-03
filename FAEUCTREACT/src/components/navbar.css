@@ -27,7 +27,7 @@ header button{
       <p >Bienvenid@ a FÆUCT!</p>
       <img src={logouct} alt="" id="logo"/>
         
-        <div id='centro'>
+        <div>
         {user?.displayName ? (
         <button onClick={handleSignOut}>DesconexionNavBar</button>
         ) : (

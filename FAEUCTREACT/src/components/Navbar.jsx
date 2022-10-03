@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <div className="container">
     <header className="py-1 px-1 border-bottom">
-        <div className="container-fluid d-grid " >
+        <div className="container-fluid d-flex " >
           <div className="dropdown">
             <a href="#" className="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-dark text-decoration-none dropdown-toggle show" data-bs-toggle="dropdown" >
                 <img src={logouct} alt="?"/>
@@ -35,18 +35,18 @@ const Navbar = () => {
           {user?.displayName ? (
                 <button onClick={handleSignOut} className="w-50 btn btn-primary" >Desconexion</button>
                 ) : (
-                <Link to='/signin'>Conectate!</Link>
+                <Link to='/signin'className="w-50 btn btn-primary">Conectate!</Link>
                 )}
             
           {user?.displayName ? (
-              <Link to='/' className="w-50 btn btn-primary">Home</Link>
+              <Link to='/home' className="w-50 btn btn-primary">Home</Link>
                 ) : (
-                <button>Inicia Sesion</button>
+                <button>Inicia sesion Para ver</button>
                 )}
           {user?.displayName ? (
               <Link to='/account' className="w-50 btn btn-primary">Cuenta</Link>
                 ) : (
-                <button>Inicia Sesion</button>
+                <button>Inicia sesion para ver</button>
                 )}
         </div>
       </header>  

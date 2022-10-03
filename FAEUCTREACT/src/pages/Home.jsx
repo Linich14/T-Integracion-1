@@ -1,19 +1,11 @@
-
-import React from 'react';
+import React from 'react'
 import './home.css';
 
-const Home = () => {
+export const Home = () => {
   return (
-    <div id="home">
-      <h1 >hola</h1>
-      <p>
-        test
-        test
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br></br>
-        Quasi libero natus excepturi, culpa rem laudantium voluptatem expedita eos fuga?
-         Temporibus ex atque id nihil, accusamus distinctio velit totam eius natus?
-      </p>
-      
+    <div className='container bg-primary '>
+        <div className='flex'><p>hola</p></div>
+        <p>hola</p>
     </div>
   )
 }

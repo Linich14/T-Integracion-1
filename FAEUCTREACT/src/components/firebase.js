@@ -5,7 +5,7 @@ import { getAuth } from "firebase/auth";
 
 
 const firebaseConfig = {
-      // aqui van las credenciales de firebase
+// aqui van las credenciales de firebase
 };
 
 // inicia firebase
