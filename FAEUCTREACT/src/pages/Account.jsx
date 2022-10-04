@@ -3,14 +3,19 @@ import {auth} from '../components/firebase'
 import { UserAuth } from '../context/AuthContext';
 import { useAuthState } from 'react-firebase-hooks/auth';
 
-import './cuenta.css';
+import './account.css';
 
 
 
 const Photo = () =>{
   const [user] = useAuthState(auth);
-  const photo = user.photoURL;
-  return photo;
+  try{
+    const photo = user.photoURL;
+    return photo;
+  }catch(error){
+    console.log(error);
+  }
+
 }
 
 const Account = () => {
@@ -25,10 +30,8 @@ const Account = () => {
   };
 
 
-
-  console.log(Photo());
   return (
-    <div className="container"id="cuenta">
+    <div className="container" id="cuenta">
       <h1  >Cuenta</h1>
       <img src={Photo()} alt="?" ></img>
       <div>

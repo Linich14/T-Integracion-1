@@ -1,9 +1,23 @@
-#googleo{
-    max-width: 240px;
-}
+
 
 #containersignin{
     background-color: rgba(239, 247, 168, 0.89);
     margin-top: 100px;
     border-radius: 40px;
+}
+
+#azulsignin{
+    height: 100px;
+    align-items: center;
+    border-radius: 40px;
+    background: rgba(130, 166, 233, 0.85);
+}
+
+
+Googlebutton{
+    max-width: 240px;
+}
+
+#centrosignin{
+    margin: auto;
 }

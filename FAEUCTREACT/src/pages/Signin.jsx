@@ -26,11 +26,15 @@ const Signin = () => {
   }, [user]);
 
   return (
-    <div className='container ' id="containersignin">
-    <h1 >Conectate con:</h1>
-    <div id="googleo">
-      <GoogleButton onClick={handleGoogleSignIn} />
+    <div className='container py-4' id="containersignin">
+    <div className='d-flex ' id='azulsignin'>
+    <div className='d-flex' id='centrosignin'>
+    <h1>Conectate con:</h1>
+
+    <GoogleButton onClick={handleGoogleSignIn} />
     </div>
+    </div>
+
   </div>
   );
 };
