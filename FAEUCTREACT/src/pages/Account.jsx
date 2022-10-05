@@ -2,19 +2,17 @@ import React from 'react';
 import { auth } from '../components/firebase'
 import { UserAuth } from '../context/AuthContext';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import Photo from './fotosperfil'
 import './cuenta.css';
 
 
 
-const Photo = () => {
-  const [user] = useAuthState(auth);
-  const photo = user.photoURL;
-  return photo;
-}
+
 
 const Account = () => {
-  const { logOut, user } = UserAuth();
+  
 
+  const { logOut, user } = UserAuth();
   const handleSignOut = async () => {
     try {
       await logOut();
@@ -25,12 +23,12 @@ const Account = () => {
 
 
 
-  console.log(Photo());
+
   return (
     <div className="container container-fluid" id="cuenta">
       <div id='main' className='d-flex flex-column align-items-center justify-content: center '>
         <h1>Perfil</h1>
-        <img id='img-user' src={Photo()} alt="?" ></img>
+        <Photo url={user?.photoURL}/>
         <div id='nombre'>
           <p>Bienvenido, {user?.displayName}</p>
         </div>
@@ -55,7 +53,7 @@ const Account = () => {
               <h5>Informacion de contacto</h5>
               <ul>
                 <li>numero: +569231231231</li>
-                <li>Direccion de correo: <a href="#">jcardenas@gmail.inf.uct.cl</a></li>
+                <li>Direccion de correo: <a href="#">{user?.email}</a></li>
               </ul>
             </li>
           </ul>

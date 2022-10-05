@@ -2,6 +2,8 @@ import React from "react";
 import { auth } from "./firebase";
 import './chat.css'
 
+import Photo from '../pages/fotosperfil'
+
 const style = {
     message: 'text-justify',
     name: 'absolute mt-[-4rem]',
@@ -10,7 +12,7 @@ const style = {
 }
 
 const Message = ({ message }) => {
-  
+
   const messageClass = 
   message.uid === auth.currentUser.uid 
   ? `${style.sent}` 
@@ -18,7 +20,7 @@ const Message = ({ message }) => {
 
   return (  
         <div className={`${messageClass}`} id="cc-1">
-            <img src={message.photo} alt="?" />
+            <Photo url={message.photo}></Photo>
             <p className="" id='c-9'>{message.name}</p>
             <p id="mensajito">{message.text}</p>
         </div>

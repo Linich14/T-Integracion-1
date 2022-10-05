@@ -70,7 +70,6 @@ const Navbar = () => {
                 ) : (
                 <Link to='/signin'className="btn btn-primary ">Conectate!</Link>
                 )}
-            
           {user?.displayName ? (
               <Link to='/home' className="btn btn-primary">Home</Link>
                 ) : (

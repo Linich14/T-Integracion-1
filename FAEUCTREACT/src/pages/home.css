@@ -7,6 +7,10 @@
     border-bottom: 60px solid transparent;
 }
 
+#body{
+    margin-top: 100px;
+}
+
 .Titulo{
     font-size: 40px;
     font-family: italic;
@@ -90,7 +94,7 @@
 
 .rec-der{
     background-color: rgba(130, 166, 233, 0.85);
-    margin-top: -36%;
+    margin-top: -30%;
     margin-block-end: 200px;
     margin-left: 70%;
     margin-right: 50px;
@@ -111,7 +115,7 @@
 
 .rec-der2{
     background-color: rgba(239, 247, 168, 0.89);
-    margin-top: -17%;
+    margin-top: -15%;
     margin-block-end: 200px;
     margin-left: 70%;
     margin-right: 50px;
@@ -127,7 +131,7 @@
     background-color: rgba(130, 166, 233, 0.85);
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: -15%;
+    margin-top: -10%;
     border-radius: 10px;
     border-bottom: 30px solid transparent;
 }
