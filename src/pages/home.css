@@ -1,0 +1,143 @@
+.Articulo-mayor{
+    background-color: rgba(239, 247, 168, 0.89);
+    margin-top: 30px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom: 60px solid transparent;
+}
+
+.Titulo{
+    font-size: 40px;
+    font-family: italic;
+    margin-left: 40%;
+}
+
+.Contenido-1{
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+.Subarticulo-izq{
+    background-color: rgba(239, 247, 168, 0.89);
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 51%;
+    border-radius: 5px;
+    border-bottom: 70px solid transparent;
+}
+
+.Titulo-sub{
+    font-size: 25px;
+    font-family: italic;
+    font-weight: bold;
+    margin-left: 40%;
+}
+
+.Contenido-sub1{
+    font-size: 14px;
+    margin-left: 3%;
+}
+
+.Subarticulo-der{
+    background-color: rgba(239, 247, 168, 0.89);
+    margin-top: -187px;
+    margin-left: 51%;
+    margin-right: 50px;
+    border-radius: 5px;
+    border-bottom: 70px solid transparent;
+}
+
+.Contenido-sub2{
+    font-size: 14px;
+    margin-left: 3%;
+}
+
+.Columna{
+    background-color: rgba(130, 166, 233, 0.85);
+    margin-top: 25px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 350px;
+    border-bottom: 5px solid transparent;
+}
+
+.Titulo-col{
+    font-size: 25px;
+    font-style: oblique;
+    margin-left: 45%;
+}
+
+.Col-opinion{
+    background-color: rgba(239, 247, 168, 0.89);
+    margin-top: 25px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 350px;
+    border-bottom: 5px solid transparent;
+}
+
+#Titulo-op{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 1%;
+}
+
+#Cont-op{
+    font-size: 14px;
+    margin-left: 2%;
+}
+
+.rec-der{
+    background-color: rgba(130, 166, 233, 0.85);
+    margin-top: -36%;
+    margin-block-end: 200px;
+    margin-left: 70%;
+    margin-right: 50px;
+    border-radius: 20px;
+    border-bottom: 70px solid transparent;
+}
+
+.Titulo-subder{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30%;
+}
+
+.Cont-subder{
+    font-size: 13px;
+    margin-left: 2%;
+}
+
+.rec-der2{
+    background-color: rgba(239, 247, 168, 0.89);
+    margin-top: -17%;
+    margin-block-end: 200px;
+    margin-left: 70%;
+    margin-right: 50px;
+    border-radius: 20px;
+    border-bottom: 70px solid transparent;
+}
+
+#hip{
+    margin-left: 3%;
+}
+
+.Final{
+    background-color: rgba(130, 166, 233, 0.85);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: -15%;
+    border-radius: 10px;
+    border-bottom: 30px solid transparent;
+}
+
+.Titulo-fin{
+    font-size: 32px;
+    margin-left: 3%;
+}
+
+.Cont-fin{
+    font-size: 16px;
+    margin-left: 1%;
+}
