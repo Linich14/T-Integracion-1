@@ -1,0 +1,44 @@
+#C-1{
+    margin-top: 100px;
+}
+
+
+
+#C-3{
+    border-radius: 20px;
+    background-color: rgba(239, 247, 168, 0.89);
+}
+
+#botonmensaje{
+    align-items: center;
+    height: auto;
+    width: 150px;
+}
+
+#inputmensaje{
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+#formita{
+    background-color: transparent;
+    overflow: hidden;
+}
+#formitacompleta{
+    
+   margin-left: 50%;
+
+}
+
+#c-9{
+    position: flex;
+}
+
+#cc-1{
+    contain: content;
+
+}
+#mensajito{
+    margin-left: 10px;
+    margin-right: 10px;
+}

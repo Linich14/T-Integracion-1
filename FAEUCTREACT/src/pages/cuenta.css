@@ -1,12 +1,4 @@
-p {
-    color: black;
-}
-
-a {
-    text-decoration: none;
-}
-
-#cuenta {
+#cuenta{
     width: auto;
     margin-left: auto;
     margin-right: auto;
@@ -14,54 +6,4 @@ a {
     background-color: rgba(239, 247, 168, 0.89);
     text-align: center;
     border-radius: 40px;
-    min-height: 200px;
-}
-
-#nombre {
-    padding-top: 10px;
-}
-
-#img-user {
-    border-radius: 95px;
-}
-
-#main {
-    padding-top: 2rem;
-}
-
-button {
-    margin-bottom: 10px;
-    margin-top: 30px;
-}
-
-#lista {
-    border-width: 5px;
-
-    padding-top: 25px;
-    text-align: left;
-    margin-left: 20%;
-    width: 30%;
-}
-
-#notas,
-#tel {
-    text-align: left;
-    padding-top: 25px;
-    margin-left: 5%;
-    width: auto;
-}
-
-
-#mid {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-th,
-td {
-    padding: 12px 15px;
-}
-
-#tabla {
-    margin: 0 auto;
 }
