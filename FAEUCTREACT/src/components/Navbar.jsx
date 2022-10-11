@@ -71,6 +71,11 @@ const Navbar = () => {
                 <Link to='/signin'className="btn btn-primary ">Conectate!</Link>
                 )}
           {user?.displayName ? (
+              <Link to='/asignaturas' className="btn btn-primary">Asignaturas</Link>
+                ) : (
+               <button className='btn y' >Inicia sesion Para ver</button>
+               )}
+          {user?.displayName ? (
               <Link to='/home' className="btn btn-primary">Home</Link>
                 ) : (
                 <button className='btn y' >Inicia sesion Para ver</button>
