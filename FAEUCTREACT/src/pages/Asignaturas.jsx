@@ -4,11 +4,14 @@
 
 
   
-  const asignaturas = () => {
+  
+  const Asignaturas = () => {
     return (
-      <div>asignaturas</div>
+      <div>Asignaturas</div>
+     
     )
   }
   
-  export default asignaturas
+  export default Asignaturas
   
+
