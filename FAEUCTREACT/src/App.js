@@ -10,7 +10,7 @@ import Home from './pages/Home';
 import Nosotros from './pages/nosotros'
 import Adminlogin from './pages/adminlogin';
 import Chat from './components/Chat'
-
+import Asignaturas from './pages/Asignaturas' 
 import './App.css';
 import { AuthContextProvider } from './context/AuthContext';
 
@@ -29,6 +29,7 @@ function App() {
       <Route path='/home' element={<Protected> <Home/> </Protected>} />
       <Route path='/chat' element={<Protected> <Chat/> </Protected>} />
       <Route path='/account' element={ <Protected> <Account/> </Protected> }/>
+      <Route path='/asignaturas' element={<Protected> <Asignaturas/> </Protected>} />
     </Routes>
     <Footer/>
     </AuthContextProvider>
