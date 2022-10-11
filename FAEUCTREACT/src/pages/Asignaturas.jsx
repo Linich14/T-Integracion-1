@@ -1,14 +1,14 @@
 
   import React from 'react'
-  import './Asignaturas.css';
+  import './asignaturas.css';
 
 
   
-  const Asignaturas = () => {
+  const asignaturas = () => {
     return (
       <div>asignaturas</div>
     )
   }
   
-  export default Asignaturas
+  export default asignaturas
   
