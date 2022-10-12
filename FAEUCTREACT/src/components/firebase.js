@@ -5,7 +5,11 @@ import {getFirestore} from 'firebase/firestore'
 
 
 const firebaseConfig = {
+<<<<<<< HEAD
   //credenciales firebase
+=======
+ //credenciales firebase
+>>>>>>> f0fa3bb (a)
 };
 
 // inicia firebase
