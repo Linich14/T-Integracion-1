@@ -86,7 +86,7 @@ const Navbar = () => {
                 <button className='btn y' >Inicia sesion Para ver</button>
                 )}
           {user?.displayName ? (
-              <Link to='/account' className="btn btn-primary">Cuenta</Link>
+              <Link to='/account' className="btn btn-primary"><img src={user.photoURL} alt="usuario" id="usuarito"/></Link>
                 ) : (
                 <button  className='btn y'>Inicia sesion para ver</button>
                 )}

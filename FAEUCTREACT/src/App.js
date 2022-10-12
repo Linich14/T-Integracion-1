@@ -10,7 +10,7 @@ import Home from './pages/Home';
 import Nosotros from './pages/nosotros'
 import Adminlogin from './pages/adminlogin';
 import Chat from './components/Chat'
-import Asignaturas from './pages/Asignaturas' 
+import Asignaturas from './pages/asignaturas' 
 import './App.css';
 import { AuthContextProvider } from './context/AuthContext';
 
