@@ -58,8 +58,8 @@ const Navbar = () => {
               <ul className="dropdown-menu text-small shadow show" data-popper-placement="bottom-start">
                 <li><Link to='/' className="dropdown-item active">FÆUCT</Link></li>
                 <li><hr className="dropdown-divider"/></li>
-                <li><Link to='/nosotros' className="dropdown-item ">Quienes Somos</Link></li>
-                <li><a className="dropdown-item" href="#">Contacto</a></li>
+                <li><Link to='/nosotros' className="dropdown-item">Quienes Somos</Link></li>
+                <li><a className="dropdown-item" href='/contacto'>Contacto</a></li>
               </ul>
             <Timer/>
           </div>
