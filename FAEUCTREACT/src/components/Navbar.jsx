@@ -58,8 +58,8 @@ const Navbar = () => {
               <ul className="dropdown-menu text-small shadow show" data-popper-placement="bottom-start">
                 <li><Link to='/' className="dropdown-item active">FÆUCT</Link></li>
                 <li><hr className="dropdown-divider"/></li>
-                <li><Link to='/nosotros' className="dropdown-item ">Quienes Somos</Link></li>
-                <li><a className="dropdown-item" href="#">Contacto</a></li>
+                <li><Link to='/nosotros' className="dropdown-item">Quienes Somos</Link></li>
+                <li><a className="dropdown-item" href='/contacto'>Contacto</a></li>
               </ul>
             <Timer/>
           </div>
@@ -71,6 +71,11 @@ const Navbar = () => {
                 <Link to='/signin'className="btn btn-primary ">Conectate!</Link>
                 )}
           {user?.displayName ? (
+              <Link to='/asignaturas' className="btn btn-primary">Asignaturas</Link>
+                ) : (
+               <button className='btn y' >Inicia sesion Para ver</button>
+               )}
+          {user?.displayName ? (
               <Link to='/home' className="btn btn-primary">Home</Link>
                 ) : (
                 <button className='btn y' >Inicia sesion Para ver</button>
@@ -81,7 +86,7 @@ const Navbar = () => {
                 <button className='btn y' >Inicia sesion Para ver</button>
                 )}
           {user?.displayName ? (
-              <Link to='/account' className="btn btn-primary">Cuenta</Link>
+              <Link to='/account' className="btn btn-primary"><img src={user.photoURL} alt="usuario" id="usuarito"/></Link>
                 ) : (
                 <button  className='btn y'>Inicia sesion para ver</button>
                 )}

@@ -37,6 +37,14 @@ button{
 .btn-primary{
     padding-top: 15px;
 }
+
+
+#usuarito{
+    height: 50px;
+    margin-top: -10px;
+    contain: content;
+}
+
 /*
 
     <div className="container" id="navegacion">
