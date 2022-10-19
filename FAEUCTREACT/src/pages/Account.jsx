@@ -33,12 +33,14 @@ const Account = () => {
       console.log(error)
     })
   };
-  const [foto, setfoto] = useState(null);
+  const [foto, setfoto] = useState(false);
 
   var a = foto
-  updateProfile(auth.currentUser, {
-    photoURL: a
-  })
+  if (!foto) { } else {
+    updateProfile(auth.currentUser, {
+      photoURL: a
+    })
+  }
 
 
   return (
@@ -109,15 +111,22 @@ const Account = () => {
         <form onSubmit={ev => {
           ev.preventDefault();
           setTexto(ev.target.username.value);
-          setfoto(ev.target.photo.value);
         }}>
           <h3>Actualizar datos</h3>
           <br />
           <input type="text" placeholder='Nombre' name='username' />
           <br />
           <br />
+          <button type='submit'>Actualizar Nombre</button>
+        </form>
+        <br />
+        <form onSubmit={ev => {
+          ev.preventDefault();
+          setfoto(ev.target.photo.value);
+        }}>
           <p>Cambio de imagen: <input type="text" name="photo" placeholder='url de la imagen' /></p>
-          <button type='submit'>Actualizar</button>
+          <br />
+          <button type='submit'>Actualizar Imagen de Perfil</button>
         </form>
         <p>*Para ver los datos actualizados se tiene que desconectar y volver a conectar</p>
       </div>
