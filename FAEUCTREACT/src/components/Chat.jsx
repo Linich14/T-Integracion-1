@@ -1,7 +1,6 @@
 import React, {useState, useEffect, useRef} from "react";
 import Message from "./Message";
 import SendMessage from "./SendMessage";
-import Sidebar from './Sidebar'
 import {db} from "./firebase";
 import {query, collection, orderBy, onSnapshot} from 'firebase/firestore'
 import './chat.css';

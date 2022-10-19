@@ -1,6 +1,6 @@
 
   import React from 'react'
-  import './asignaturas.css';
+  import './Asignaturas.css';
 
   const Asignaturas = () => {
     return (
