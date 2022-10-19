@@ -8,7 +8,18 @@ con el fin de evitar el backend tipico de PHP y MySQL el cual nos genero un tant
 seguimos en el frontend de las paginas basicas que nos requieren en otras asignaturas.
  <br /><br />
 
+<h2><i>Index</i></h2>
 
+![alt text](https://i.imgur.com/P1qz0lm.jpg)
+
+<h2><i>Home</i></h2>
+
+
+![alt text](https://i.imgur.com/pGQD9GW.jpg)
+
+<h2><i>Chat</i></h2>
+
+![alt text](https://i.imgur.com/AvXDXWw.jpg)
 
 
 
