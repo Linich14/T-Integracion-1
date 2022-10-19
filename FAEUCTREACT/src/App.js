@@ -11,6 +11,7 @@ import Nosotros from './pages/nosotros'
 import Adminlogin from './pages/adminlogin';
 import Chat from './components/Chat'
 import Asignaturas from './pages/Asignaturas' 
+import Contacto from './pages/Contacto' 
 import './App.css';
 import { AuthContextProvider } from './context/AuthContext';
 

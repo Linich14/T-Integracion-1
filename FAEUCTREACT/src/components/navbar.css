@@ -40,7 +40,8 @@ button{
 
 
 #usuarito{
-    margin-top: -10;
+    height: 50px;
+    margin-top: -10px;
     contain: content;
 }
 
