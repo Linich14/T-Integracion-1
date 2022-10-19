@@ -9,12 +9,11 @@ import Signin from './pages/Signin';
 import Home from './pages/Home';
 import Nosotros from './pages/nosotros'
 import Adminlogin from './pages/adminlogin';
-import Chat from './components/Chat'
+import PrivateC from './components/PrivateC';
+
 
 import './App.css';
 import { AuthContextProvider } from './context/AuthContext';
-
-
 
 
 function App() {
@@ -27,7 +26,7 @@ function App() {
       <Route path='/' element={<Inicio/>}/>
       <Route path='/signin' element={<Signin />} />
       <Route path='/home' element={<Protected> <Home/> </Protected>} />
-      <Route path='/chat' element={<Protected> <Chat/> </Protected>} />
+      <Route path='/chat' element={<Protected> <PrivateC/> </Protected>} />
       <Route path='/account' element={ <Protected> <Account/> </Protected> }/>
     </Routes>
     <Footer/>

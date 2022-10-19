@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useRef} from "react";
 import Message from "./Message";
 import SendMessage from "./SendMessage";
+import Sidebar from './Sidebar'
 import {db} from "./firebase";
 import {query, collection, orderBy, onSnapshot} from 'firebase/firestore'
 import './chat.css';
@@ -23,10 +24,11 @@ const Chat = () => {
     }, []);
 
 return (
+
         <div className='container ' id="C-1">
 
                 <main className=" " id="C-3">
-
+                    
                     {messages && messages.map((message) =>(
                         <Message key={message.id} message={message}  />
                     ))}
@@ -38,7 +40,7 @@ return (
                 <span ref={scroll}></span>
 
         </div>
+
     )
 }
-
 export default Chat;
