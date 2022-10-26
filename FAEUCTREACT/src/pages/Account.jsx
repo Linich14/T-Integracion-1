@@ -1,12 +1,9 @@
 import React from 'react';
-import { auth } from '../components/firebase'
 import { UserAuth } from '../context/AuthContext';
-import { useAuthState } from 'react-firebase-hooks/auth';
 import Photo from './fotosperfil'
 import './cuenta.css';
 import { getAuth, updateProfile } from "firebase/auth";
 import { useState } from 'react';
-import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
 
 
@@ -47,7 +44,9 @@ const Account = () => {
     <div className="container container-fluid" id="cuenta">
       <div id='main' className='d-flex flex-column align-items-center justify-content: center '>
         <h1>Perfil</h1>
-        <Photo url={user?.photoURL} />
+        <div id='foto'>
+          <Photo url={user?.photoURL} />
+        </div>
         <div id='nombre'>
           <p>Bienvenido, {user?.displayName}</p>
         </div>
@@ -126,7 +125,7 @@ const Account = () => {
         }}>
           <p>Cambio de imagen: <input type="text" name="photo" placeholder='url de la imagen' /></p>
           <br />
-          <button type='submit'>Actualizar Imagen de Perfil</button>
+          <button id='boton' type='submit'>Actualizar Imagen de Perfil</button>
         </form>
         <p>*Para ver los datos actualizados se tiene que desconectar y volver a conectar</p>
       </div>
