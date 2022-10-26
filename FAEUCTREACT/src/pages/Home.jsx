@@ -1,9 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './home.css';
+import Posts from './posts';
 
 const Home = () => {
   return (
     <main className='container' id='body'>
+      <Link to="/posts" className='btn btn-primary'>Hacer una publicación</Link>
       <div className="Articulo-mayor">
           <h1 className="Titulo">Titulo</h1>
           <p className='Contenido-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis similique, totam illo voluptas eveniet ea corporis accusamus nihil vitae!</p>
