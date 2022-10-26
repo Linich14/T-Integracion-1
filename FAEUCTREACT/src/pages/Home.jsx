@@ -1,13 +1,23 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './home.css';
-import Posts from './posts';
+import Menu from '../components/Menu'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <main className='container' id='body'>
+    <div className=' container'>
+      <div className='row'>
+        <div className='col-2'>
+        <br /><br /><br /><br />
       <Link to="/posts" className='btn btn-primary'>Hacer una publicación</Link>
+      <Menu className='sticky-bottom'style={{backgroundColor:" rgba(239, 247, 168, 0.89)"}}/>
+    </div>
+    
+    <div className='col-10'>
+    <main className='' id='body'>
+      
       <div className="Articulo-mayor">
+      
           <h1 className="Titulo">Titulo</h1>
           <p className='Contenido-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis similique, totam illo voluptas eveniet ea corporis accusamus nihil vitae!</p>
       </div> 
@@ -53,7 +63,10 @@ const Home = () => {
         <p className='Cont-fin'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quos ea doloribus recusandae corrupti velit saepe, laborum aliquam delectus voluptatem. Dignissimos consequuntur dolorum ad quam, animi nostrum quae enim modi.</p>
       </div>
     </main>
-
+    </div>
+   
+    </div>
+    </div>
   )
 }
 

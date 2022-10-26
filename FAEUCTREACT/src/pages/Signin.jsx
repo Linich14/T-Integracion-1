@@ -3,6 +3,8 @@ import React, { useEffect } from 'react';
 import { GoogleButton } from 'react-google-button';
 import { UserAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import { db } from '../components/firebase';
+import { addDoc, collection } from 'firebase/firestore';
 import './signin.css';
 
 const Signin = () => {
@@ -12,9 +14,15 @@ const Signin = () => {
   const handleGoogleSignIn = async () => {
     try {
       await googleSignIn();
+
     } catch (error) {
       console.log(error);
     }
+    await addDoc(collection(db, 'personas'), {
+      uid: user.uid,
+      name: user.displayName,
+      authProvider: "google",
+      email: user.email})
   };
 
   useEffect(() => {
