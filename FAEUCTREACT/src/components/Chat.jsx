@@ -25,19 +25,19 @@ const Chat = () => {
 return (
 
         <div className='container ' id="C-1">
-
-                <main className=" " id="C-3">
+        <div className='row' >
+                <main className=" col" id="C-3">
                     
                     {messages && messages.map((message) =>(
                         <Message key={message.id} message={message}  />
                     ))}
 
-                    <hr className="mb-2"/>
+                    <hr className=""/>
                     <SendMessage scroll={scroll} />
 
                 </main>
                 <span ref={scroll}></span>
-
+                </div>
         </div>
 
     )

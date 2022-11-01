@@ -7,7 +7,7 @@ class ImageComponent extends Component {
     render() {
         return (
 
-            <img src={this.props.url} width='150px' alt="display image" />
+            <img src={this.props.url}  alt="cargando imagen..." />
 
         );
     }

@@ -1,5 +1,6 @@
 #cuenta {
     width: 50%;
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .6);
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
@@ -24,4 +25,51 @@ ul {
 
 #tel {
     padding-left: 4rem;
+}
+
+img {
+    border-radius: 4px;
+}
+
+#nombre {
+    padding-top: 30px;
+}
+
+#foto {
+    padding: 3px;
+    background-color: rgb(102, 94, 94);
+    width: 151px;
+    height: 191px;
+    border-top: 5px solid rgb(102, 94, 94);
+    border-left: 4px solid rgb(102, 94, 94);
+    border-right: 3px solid rgb(102, 94, 94);
+    border-radius: 4px;
+    box-shadow: 7px 13px 24px rgba(0, 0, 0, .6);
+}
+
+input {
+    outline: none;
+    border: none;
+    padding: 0.375rem 0.75rem;
+    border-bottom: 2px solid rgba(153, 146, 146, 0.8);
+    border-radius: 4px;
+    text-align: center;
+
+}
+
+input:focus {
+    border-bottom: 2px solid blue;
+}
+
+input:hover {
+    border-bottom: 2px solid blue;
+}
+
+button {
+    transition: .2s ease-in-out all;
+}
+
+button:hover {
+    transform: scale(1);
+    background-color: #cc1010;
 }
