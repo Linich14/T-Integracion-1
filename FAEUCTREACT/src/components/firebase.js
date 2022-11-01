@@ -7,7 +7,7 @@ import { getStorage, ref } from "firebase/storage";
 
 const firebaseConfig = {
 
-  //credenciales firebase
+
 
 };
 
