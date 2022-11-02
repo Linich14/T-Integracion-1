@@ -1,7 +1,7 @@
 import React from 'react'
 import {uploadPost } from "../components/firebase";
 import { useState } from 'react';
-import {saveAs} from 'file-saver'
+import {saveAs} from 'file-saver';
 import {v4} from 'uuid';
 import './posts.css';
 
