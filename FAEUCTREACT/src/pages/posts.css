@@ -1,6 +1,6 @@
 .upload{
     background-color: rgba(239, 247, 168, 0.89);
-    margin-top: 10%;
+    margin-top: 2%;
     margin-left: 30%;
     margin-right: 30%;
     border-radius: 10px;
@@ -15,4 +15,28 @@
 #subir{
     margin-top: 50px;
     margin-left: 23%;
+}
+
+#titulo-noti{
+
+    display: flex;
+    margin-top:7%;
+    margin-left: 30%;
+    margin-right: 30%;
+    color:black;
+
+
+}
+
+#noticia-text{
+    display:block;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 10px;
+    width: 40%;
+}
+#guardar-txt{
+
+    width: 10%;
+    margin-left: 70%;
 }

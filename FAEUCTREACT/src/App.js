@@ -30,7 +30,6 @@ function App() {
       <Route path='/signin' element={<Signin />} />
       <Route path='/home' element={<Protected> <Home/> </Protected>} />
       <Route path='/posts' element={<Protected> <Posts/> </Protected>} />
-      <Route path='/chat' element={<Protected> <PrivateC/> </Protected>} />
       <Route path='/account' element={ <Protected> <Account/> </Protected> }/>
       <Route path='/asignaturas' element={<Protected> <Asignaturas/> </Protected>} />
     </Routes>

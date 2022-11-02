@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import './home.css';
-import Menu from '../components/Menu'
-import { Link } from 'react-router-dom'
+import Menu from '../components/Menu';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
