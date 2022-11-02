@@ -1,8 +1,10 @@
 import React from 'react'
 import Menu from '../components/Menu'
 import './grupos.css'
+import { Link } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
 import Photo from './fotosperfil'
+
 
 const grupos = () => {
   const { user } = UserAuth();
@@ -35,8 +37,12 @@ const grupos = () => {
             </div>
             <hr />
             <div className='py-1' style={{backgroundColor:" rgba(239, 247, 168, 0.89)"}}>
+               
              <Photo url={user?.photoURL} className="avatar"/><pre><h2>mucho texto del post</h2></pre>
-             <Photo url="https://i.imgur.com/oxiFX0j.jpg" />
+             <Link to="https://imgur.com">
+                <Photo url="https://i.imgur.com/oxiFX0j.jpg" />
+             </Link>
+             
             </div>
         </div>
     </div>

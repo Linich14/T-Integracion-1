@@ -1,6 +1,6 @@
 
   import React from 'react'
-  import './asignaturas.css';
+  import './Asignaturas.css';
   import ListGroup from 'react-bootstrap/ListGroup';
   import Toast from 'react-bootstrap/Toast';
   import Badge from 'react-bootstrap/Badge';
