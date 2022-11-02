@@ -42,7 +42,8 @@ const Account = () => {
 
   return (
     <div className="container container-fluid" id="cuenta">
-      <div id='main' className='d-flex flex-column align-items-center justify-content: center '>
+      
+      <div id='main' className="d-flex flex-column align-items-center justify-content: center ">
         <h1>Perfil</h1>
         <div id='foto'>
           <Photo url={user?.photoURL} />
