@@ -1,6 +1,5 @@
 import React from 'react'
 import './contacto.css';
-import '../components/Contacto'
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
