@@ -5,6 +5,7 @@ import {saveAs} from 'file-saver';
 import {v4} from 'uuid';
 import './posts.css';
 
+
 function Posts() {
 
     const [file, setFile] = useState()
@@ -33,13 +34,11 @@ function Posts() {
         saveAs(blob, (v4()+'txt'));
     }
 
-    
-
     return(
         <div>
             
             <h1 id='titulo-noti'>Nueva Noticia</h1>
-            <button id='guardar-txt' onClick={createText}> GuardarTexto </button>
+            <button id='guardar-txt' onClick={createText}> Guardar Texto </button>
             <textarea 
             
             id="noticia-text"
@@ -51,10 +50,12 @@ function Posts() {
             
             ></textarea>
 
-
             <form onSubmit={handleSubmit} className="upload"> {/* Boton cargar post*/}
                 <input type="file" name="" id='select' onChange={e => setFile(e.target.files[0])}/>
-                <button className='btn btn-primary' id='subir'>Subir Archivo</button>
+                <button
+                 className='btn btn-primary'
+                  id='subir'
+                  >Subir Archivo</button>
             </form>
 
         </div>
