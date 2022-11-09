@@ -5,21 +5,25 @@ import { UserAuth } from '../context/AuthContext';
 
 const Post = () => {
     const { user } = UserAuth();
-
+    const [usuario , setUser] = useState(user.displayName)
     const [title, setPostTitle] = useState("")
     const [description, setPostText] = useState("")
     const [imgurl, setPostUrl] = useState("")
     const [createdat, setTime] = useState(Timestamp.now().toDate().toString());
+    
+    
 
     const handleSubmit = async (e) => {
+        
         await addDoc(collection(db, "Blogs"), {
-            title, createdat, description, imgurl
+            title, createdat, description, imgurl, usuario
         }).then(() => { alert('Publicado') })
             .catch(err => { alert(err.message) })
         setPostText("")
         setPostTitle("")
         setPostUrl("")
         setTime("")
+        setUser("")
 
     }
 
