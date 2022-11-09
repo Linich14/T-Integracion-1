@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Route, Routes} from 'react-router-dom';
 import Protected from './components/Protected';
 import Inicio from './pages/Inicio';
@@ -17,10 +17,26 @@ import Contacto from './pages/Contacto'
 import Posts from './pages/posts'
 import './App.css';
 import { AuthContextProvider } from './context/AuthContext';
+import DatePicker from 'react-datepicker'; 
+import 'react-datepicker/dist/react-datepicker.css';
+
+
+
+
+
 
 
 function App() {
+
+  
+
+  
+
   return (
+
+   
+
+    
     <AuthContextProvider>
     <Navbar/>
     

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import './inicio.css';
+import '../components/Contacto'
 
 import imagenuct1 from '../images/uctsanfrancisco.jpg'
 import imagenuct2 from '../images/UCT.jpg'
@@ -10,7 +11,7 @@ const Inicio = () => {
 
   return (
     <div className="container" id="inicio">
-    <h1 className="py-3 "><i>¡Bienvenid@ a FÆUCT!</i></h1>
+    <h1 id="bnvd"><i>¡Bienvenid@ a FÆUCT!</i></h1>
           <section className="slider">
                 
           <div className="slider_container container ">
@@ -41,14 +42,14 @@ const Inicio = () => {
             </div>
         </section>
        <hr />
-      <p>
+      <h5 className='cont-index'>
         Un Lugar donde encontraras la conexion a las demas herramientas virtuales que ofrece la Universidad Catolica de Temuco.<br></br>
         Donde tambien podras encontrar a tus compañeros, enviarles mensajes a las personas que conoces, ver tus asignaturas, <br></br>crear grupos y
         seguir las noticias mas importantes y destacadas de la universidad.
         <br></br>
         <br></br>
-         ¡Solo Tienes que ingresar con tu cuenta de Google perteneciente a la Universidad!
-      </p>
+        ¡Solo Tienes que ingresar con tu cuenta de Google perteneciente a la Universidad!
+      </h5>
       <hr />
     </div>
   )

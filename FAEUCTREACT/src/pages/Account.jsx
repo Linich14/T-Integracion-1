@@ -4,12 +4,15 @@ import Photo from './fotosperfil'
 import './cuenta.css';
 import { getAuth, updateProfile } from "firebase/auth";
 import { useState } from 'react';
+import DatePicker from 'react-datepicker'; 
+import 'react-datepicker/dist/react-datepicker.css';
 
 
 
 
 const Account = () => {
 
+ 
 
   const { logOut, user } = UserAuth();
   const handleSignOut = async () => {
@@ -52,6 +55,13 @@ const Account = () => {
           <p>Bienvenido, {user?.displayName}</p>
         </div>
       </div>
+
+
+
+     <div className='contenedor'>
+    <DatePicker selected={3}><p>Calendario</p></DatePicker>
+    </div><input type="button" value="Calendario" className='btn btn-primary'/>
+     
       <div id='mid' className='d-flex'>
         <div id='lista' className='d-flex'>
           <ul>
