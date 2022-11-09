@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './inicio.css';
-import '../components/Contacto'
+import '../pages/Contacto'
 
 import imagenuct1 from '../images/uctsanfrancisco.jpg'
 import imagenuct2 from '../images/UCT.jpg'

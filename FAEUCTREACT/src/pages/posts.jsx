@@ -1,65 +1,58 @@
-import React from 'react'
-import {uploadPost } from "../components/firebase";
-import { useState } from 'react';
-import {saveAs} from 'file-saver';
-import {v4} from 'uuid';
+import React, {useState} from "react";
+import {addDoc, collection} from 'firebase/firestore';
+import {db} from '../components/firebase';
 import './posts.css';
 
 
-function Posts() {
+const Post = () =>{
 
-    const [file, setFile] = useState()
+    const [title, setTitle] = useState("");
+    const [body, setBody] = useState("");
 
-    const handleSubmit = async (e) => { {/* funcion para cargar el archivo con el boton*/}
+    function handleSubmit(e){
         e.preventDefault();
-        try{
-            const result = await uploadPost(file);
-            console.log(result)
-            alert('Se ha subido correctamente el archivo!')
+        if(title === ''){
+            return
         }
-        catch(error)
-        {
-            console.error(error)
-            alert('Fallo al subir el archivo, intente nuevamente.')
-        }
-    };
-
-    const [myValue, setMyValue] = useState('')
-
-
-    const createText = () => {
-
-        const blob = new Blob([myValue], {type: 'text/plain;charset=utf-8'});
-
-        saveAs(blob, (v4()+'txt'));
+        const postCollectionRef = collection(db, 'post-home')
+        addDoc(postCollectionRef, {title, body}).then(response=>{
+            console.log(response)
+        }).catch(error =>{
+            console.log(error.mensaje)
+        }) 
+        alert(title)
     }
 
     return(
         <div>
-            
-            <h1 id='titulo-noti'>Nueva Noticia</h1>
-            <button id='guardar-txt' onClick={createText}> Guardar Texto </button>
-            <textarea 
-            
-            id="noticia-text"
-            cols = "30"
-            rows= "10"
-            placeholder='Escriba algo...'
-            value={myValue}
-            onChange={(e) => setMyValue(e.target.value)}
-            
-            ></textarea>
+            <h1 id='titulo-noti'>Crear Noticia</h1>
 
-            <form onSubmit={handleSubmit} className="upload"> {/* Boton cargar post*/}
-                <input type="file" name="" id='select' onChange={e => setFile(e.target.files[0])}/>
-                <button
-                 className='btn btn-primary'
-                  id='subir'
-                  >Subir Archivo</button>
+            <form id="noticia-text"  onSubmit={handleSubmit}>
+                <label id='txt-title' htmlFor="title">Titulo</label>
+                    <input
+                    id='titulo'
+                    type='text'
+                    value={title}
+                    onChange={ e => 
+                    setTitle(e.target.value)}/>
+                <label id= 'content' htmlFor="body">Contenido</label>
+                    <input
+                    id="cuerpo"
+                    type='text'
+                    value={body}
+                    onChange={e =>
+                    setBody(e.target.value)}/>
+            <button
+             id="guardar"
+             type='submit'
+             >Subir Noticia</button>
+            
             </form>
+            
+
 
         </div>
-    );
-}
+    )
 
-export default Posts;
+}
+export default Post;
