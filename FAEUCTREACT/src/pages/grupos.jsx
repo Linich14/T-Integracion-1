@@ -47,7 +47,7 @@ const Grupos = () => {
                                         <hr />
                                         <div className='section1'>
                                             <h2>{blog.title}</h2>
-                                            <p>Publicado por: {user?.displayName}</p>
+                                            <p>Publicado por: {blog.usuario}</p>
                                         </div>
                                         <div className='section2'><p>{blog.description}</p></div>
                                         <div className='section3'><img src={blog.imgurl} width='200' height='200' alt=' . . .' /></div>

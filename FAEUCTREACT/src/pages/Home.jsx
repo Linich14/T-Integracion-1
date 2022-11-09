@@ -1,9 +1,39 @@
-import React from 'react';
+import {React, useState, useEffect} from 'react';
 import './home.css';
 import Menu from '../components/Menu';
 import { Link } from 'react-router-dom';
+import {ref, listAll, getDownloadURL} from 'firebase/storage'
+import {storage} from '../components/firebase'
+
 
 const Home = () => {
+
+  const postListRef = ref(storage, 'post-home/')
+  const [postList, setPostList] = useState([]);
+  
+  const pathNoti = ref(storage, 'faeuct-test.appspot.com/post-home/tablet.txt')
+  const [raw, setRaw] = useState()
+
+  fetch({pathNoti})
+  .then(r => r.text(String))
+  .then(text => {setRaw(text)});
+
+
+  useEffect(() =>{
+
+    listAll(postListRef).then((response) => {
+
+        response.items.forEach((item)=>{
+            getDownloadURL(item).then((url) =>{
+                setPostList((prev)=>[...prev, url]);
+            });
+        });
+    });
+    }, []);
+
+
+
+
   return (
     <div className=' container'>
       <div className='row'>
@@ -18,13 +48,26 @@ const Home = () => {
       
       <div className="Articulo-mayor">
       
-          <h1 className="Titulo">Titulo</h1>
-          <p className='Contenido-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perspiciatis similique, totam illo voluptas eveniet ea corporis accusamus nihil vitae!</p>
+          <h1 className="Titulo">Memes de la comunidad</h1>
+          {postList.map((url)=>{
+            var count = 0;
+              while(postList.map){
+                if(count == 1){
+                      return <img
+                      height='220px'
+                      width='220px'
+                      margin-left='20px'
+                      src={url} />;
+                }
+              count = +1;
+                  }
+                    }
+                      )}
       </div> 
 
       <div className='Subarticulo-izq'>
-        <h3 className='Titulo-sub'>Titulo</h3>
-        <p className='Contenido-sub1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odio, cum tempore ut ipsam blanditiis libero, accusamus impedit optio commodi, ullam beatae eligendi. Laboriosam inventore provident ratione.</p>
+        <h3 className='Titulo-sub'>Noticias</h3>
+        <p>{raw}</p>
       </div>
 
       <div className='Subarticulo-der'>
