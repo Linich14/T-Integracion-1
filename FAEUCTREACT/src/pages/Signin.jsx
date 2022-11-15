@@ -64,7 +64,7 @@ const Signin = () => {
               <label for="floatingInput"><i>Admin FÆUCT</i></label>
             </div>
             <div className="form-floating mb-3">
-            <input   placeholder="Password..." onChange={(e) => setPassword(e.target.value)} class="form-control"  />
+            <input   placeholder="Password..." onChange={(e) => setPassword(e.target.value)} class="form-control" type="password"  />
               <label for="floatingPassword"><i>Contraseña</i></label>
             </div>
             <hr className="my-4"/>

@@ -1,58 +1,29 @@
 import React, { useState } from "react";
 import './adminlogin.css'
-import { auth } from '../components/firebase';
-import {
-  signInWithEmailAndPassword,
-  onAuthStateChanged,
-} from "firebase/auth";
+
+
+
+import {admin} from '../components/firebase'
+import { UserAuth } from '../context/AuthContext';
 
 
 
 
 const Adminlogin = () => {
-  const [loginEmail, setLoginEmail] = useState("");
-  const [loginPassword, setLoginPassword] = useState("");
-  const [setUser] = useState({});
-  onAuthStateChanged(auth, (currentUser) => {
-    setUser(currentUser);
-  });
-
-  const login = async () => {
-    try {
-      const user = await signInWithEmailAndPassword(
-        auth,
-        loginEmail,
-        loginPassword
-      );
-      console.log(user);
-    } catch (error) {
-      console.log(error.message);
-      console.log("hola?")
-    }
-  };
-
-
+  const { user } = UserAuth();
   return (
-    <div className="container col-xl-10 col-xxl-8  py-5">  
-      <div className="row align-items-center g-lg-5 py-5">
-
-        <div className="col-md-10 mx-auto col-lg-5" >
-          <form className="p-4 p-md-5  rounded-3 ">
-            <div className="form-floating mb-3">
-            <input  placeholder="Email..."  class="form-control" onChange={(event) => {setLoginEmail(event.target.value);  }} />
-              <label for="floatingInput"><i>Admin FÆUCT</i></label>
-            </div>
-            <div className="form-floating mb-3">
-            <input   placeholder="Password..." class="form-control" onChange={(event) => {setLoginPassword(event.target.value);   }}  />
-              <label for="floatingPassword"><i>Contraseña</i></label>
-            </div>
-            <hr className="my-4"/>
-            <button className="w-100 btn btn-lg btn-primary" type="submit"  onClick={login}>Ingresar</button>
-          </form>      
-        </div>  
-      </div>
-    </div>
+    <>
+      <br></br><br></br>
+      <br></br><br></br>
+       {user.uid === admin ? 
+        <div className="container" style={{ backgroundColor: " rgba(239, 247, 168, 0.89)" }}>
+          cosas de admins
+        </div>
+        :    <div className="container" style={{ backgroundColor: " rgba(239, 247, 168, 0.89)" }}>
+        Usted no es un Usuario habilitado para ver esta pagina.
+      </div>}
+    </>
   )
 }
 
-export default Adminlogin
+export default Adminlogin 

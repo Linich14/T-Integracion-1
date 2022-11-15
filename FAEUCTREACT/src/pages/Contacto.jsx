@@ -1,9 +1,13 @@
 import React from 'react'
 import './contacto.css';
+<<<<<<< HEAD
 import '../pages/Contacto'
+=======
+>>>>>>> 7d74ff4f5a90a0645d9d530faf0e10a49eda8225
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+
 
 import imagenuct1 from '../images/uctsanfrancisco.jpg'
 import imagenuct2 from '../images/UCT.jpg'
