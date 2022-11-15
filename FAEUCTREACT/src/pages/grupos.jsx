@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Menu from '../components/Menu'
 import './grupos.css'
 import { UserAuth } from '../context/AuthContext';
-import Photo from './fotosperfil'
+import Delete from '../components/Delete'
 import PostFrom from '../components/form';
 import { collection, onSnapshot, orderBy, query } from 'firebase/firestore';
 import { db } from '../components/firebase'
@@ -42,17 +42,20 @@ const Grupos = () => {
                         <div className='row rounded' style={{ backgroundColor: " rgba(239, 247, 168, 0.89)" }}>
                             <h1>aqui van los posteos</h1>
                             <div className='py-1' style={{ backgroundColor: " rgba(239, 247, 168, 0.89)" }}>
-                                {blogs.length === 0 ? (<p>No hay blogs</p>) : (blogs.map((blog) =>
-                                    <div className='blog-cont' key={blog.id}>
+                                {blogs.length === 0 ? (<p>No hay blogs</p>) : (blogs.map(({ id, title, description, imgurl, usuario, createdat }) =>
+                                    <div className='blog-cont' key={id}>
                                         <hr />
                                         <div className='section1'>
-                                            <h2>{blog.title}</h2>
-                                            <p>Publicado por: {blog.usuario}</p>
+                                            <h2>{title}</h2>
+                                            <p>Publicado por: {usuario}</p>
                                         </div>
-                                        <div className='section2'><p>{blog.description}</p></div>
-                                        <div className='section3'><img src={blog.imgurl} width='200' height='200' alt=' . . .' /></div>
+                                        <div className='section2'><p>{description}</p></div>
+                                        <div className='section3'><img src={imgurl} width='200' height='200' alt=' . . .' /></div>
                                         <div className='section4'>
-                                            <p>- {blog.createdat}</p>
+                                            <p>- {createdat}</p>
+                                        </div>
+                                        <div>
+                                            <Delete id={id} />
                                         </div>
                                     </div>
                                 ))}
