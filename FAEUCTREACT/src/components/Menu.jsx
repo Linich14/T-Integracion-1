@@ -60,7 +60,7 @@ const Menu = () => {
           return (
             <ul className='rounded'>
               {this.props.items.map(item => (
-                <li key={item.id}>{item.text}</li>
+                <li key={item.id}>.- {item.text}</li>
               ))}
             </ul>
           );
@@ -71,28 +71,28 @@ const Menu = () => {
 
   return (
     <div >
-         <menu className=' container rounded py-4 'style={{backgroundColor:" rgba(239, 247, 168, 0.89)"}}>
+         <menu className=' container rounded py-3 'style={{backgroundColor:" rgba(239, 247, 168, 0.89)"}}>
           <ul className='row'>
-            <span className='row '>Menu</span>
-               <li className='row'> {user?.displayName ? (
+            <button className='row'><bold>MENUCT</bold></button>
+               <li className='row py-1'> {user?.displayName ? (
               <Link to='/home' className=" btn btn-primary ">Home</Link>
                 ) : (
                 <button className='row btn y' >Inicia sesion Para ver</button>
                 )}
                 </li>
-         <li className='row'> {user?.displayName ? (
+         <li className='row py-1'> {user?.displayName ? (
               <a href="https://webmail.uct.cl"className=" btn btn-primary">Webmail</a>
                 ) : (
                 <button className='row btn y' >Inicia sesion Para ver</button>
                 )}
                 </li>
-                      <li className='row'>   {user?.displayName ? (
+                      <li className='row py-1'>   {user?.displayName ? (
               <a href="https://estudiantes.uct.cl"className=" btn btn-primary">Portal Estudiante</a>
                 ) : (
                 <button className='row btn y' >Inicia sesion Para ver</button>
                 )}
                 </li> 
-       <li className='row'> {user?.displayName ? (
+       <li className='row py-1'> {user?.displayName ? (
               <Link to='/account' className=" btn btn-primary"><img src={user.photoURL} alt="usuario" id="usuarito"/></Link>
                 ) : (
                 <button  className='row btn y'>Inicia sesion para ver</button>

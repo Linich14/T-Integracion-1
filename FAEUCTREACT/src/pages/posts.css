@@ -29,8 +29,8 @@
 #titulo{
     font-size: 20px;
     margin-top: 1%;
-    margin-left: 9%;
-    margin-right: 9%;
+    margin-right: 20%;
+    margin-left: 21%;
 
 }
 
@@ -46,6 +46,7 @@
     font-size: 20px;
     font-display: flex;
     margin-left: 5%;
+    
 }
 
 #img{
@@ -56,6 +57,7 @@
 }
 
 #arch{
+    margin-top: 1%;
     font-size: 20px;
     margin-right: 20%;
     margin-left: 21%;
@@ -65,4 +67,24 @@
     position: center;
     margin-top: 1%;
     margin-left: 25%;
+}
+
+.posteito{
+    border-style: solid;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.botonposteos{
+    text-decoration: none;
+    background-color: aqua;
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-right: 50%;
+}
+
+.inputcito{
+
+    width: 500px; /* Se Asigna la dimension del ancho de ambos */
+
 }

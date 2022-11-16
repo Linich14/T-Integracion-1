@@ -3,6 +3,7 @@ import React from 'react'
 import { db, storage } from '../components/firebase'
 import { toast } from 'react-toastify';
 import { deleteObject, ref } from 'firebase/storage';
+import '../pages/grupos.css'
 
 export default function Delete({ id }) {
 
@@ -19,6 +20,6 @@ export default function Delete({ id }) {
     }
 
     return (
-        <div><button className='btn btn-danger' onClick={handleDelete}>Delete</button></div>
+        <div><button className='btn btn-danger deleteao' onClick={handleDelete}>Delete</button></div>
     )
 }

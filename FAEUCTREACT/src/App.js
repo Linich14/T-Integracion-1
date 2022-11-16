@@ -13,6 +13,7 @@ import Chat from './components/Chat';
 import Grupos from './pages/grupos'
 import Asignaturas from './pages/Asignaturas' 
 import Contacto from './pages/Contacto' 
+import PanelProfesores from './pages/controlasignaturas'
 
 import Posts from './pages/posts'
 import './App.css';
@@ -41,6 +42,7 @@ function App() {
       <Route path='/account' element={ <Protected> <Account/> </Protected> }/>
       <Route path='/asignaturas' element={<Protected> <Asignaturas/> </Protected>} />
       <Route path='/admin' element={<Protected> <Adminlogin/> </Protected>} />
+      <Route path='/panelprofesores' element={<Protected> <PanelProfesores/> </Protected>} />
     </Routes>
     <Footer/>
     </AuthContextProvider>

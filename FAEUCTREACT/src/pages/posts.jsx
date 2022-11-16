@@ -8,7 +8,7 @@ import './posts.css';
 const Post = () =>{
 
     const {user} = UserAuth();
-    const [usuario , setUser] = useState(user?.displayName);
+    const [usuario , setUser] = useState("");
     const [tittle, setTitle] = useState("");
     const [body, setBody] = useState("");
     const [img , setImg] = useState("");
@@ -18,42 +18,56 @@ const Post = () =>{
         if(tittle === ''){
             return
         }
+
         const postCollectionRef = collection(db, 'post-home')
-        await addDoc(postCollectionRef, {tittle, body, img}).then(response=>{
+        
+        await addDoc(postCollectionRef, {tittle, body, img, usuario}).then(response=>{
             console.log(response)
         }).catch(error =>{
             console.log(error.mensaje)
         })
-        alert(tittle)
+        alert("Subido Exitosamente")
     }
     return(
-        <div>
-            <h1 id='titulo-noti'>Crear Noticia</h1>
-            <form id="noticia-text" onSubmit={handleSubmit}>
+        <div className="">
+            <br /><br />
+            <br /> <br />
+               <form id="noticia-text" onSubmit={handleSubmit}>
+                <h1 id='titulo-noti'>Crear Noticia</h1>
+               <br />
                 <label id='txt-title' htmlFor="title">Titulo</label>
                     <input
                     id='titulo'
                     type='text'
+                    style={{width: "500px"}}
                     value={tittle}
                     onChange={ e => 
                     setTitle(e.target.value)}/>
-                <label id= 'content' htmlFor="body">Contenido</label>
-                    <input
-                    id="cuerpo"
-                    type='text'
-                    value={body}
-                    onChange={e =>
-                    setBody(e.target.value)}/>
+                <hr />
                 <label id='img' htmlFor="images">Imagenes</label>
                     <input
                     id="arch"
                     type='imgs'
                     value={img}
+                    style={{width: "500px"}}
                     onChange={e =>
                     setImg(e.target.value)}/>
+                    <hr />
+                <label id= 'content' htmlFor="body">Contenido</label>
+                    <textarea
+                    id="cuerpo"
+                    type='text'
+                    className="inputcito"
+                    value={body}
+                    onChange={e =>
+                    setBody(e.target.value)}/>
+
             <button
              id="guardar"
              type='submit'
+             onClick={e => setUser(user.displayName)}
+             
+             className="py-1 mb-3 btn btn-primary"
              >Subir Noticia</button>
             </form>
         </div>

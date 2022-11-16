@@ -56,7 +56,7 @@ const Signin = () => {
     <div className='d-flex ' id='azulsignin'> <div className='d-flex' id='centrosignin'> <h1>Alumno, Conectate con:</h1> <GoogleButton onClick={handleGoogleSignIn} /> </div> </div>
     <br /><br />
     <div className="col-md-10 mx-auto col-lg-5" >
-          <form className="p-4 p-md-5  " onSubmit={handleSubmit}>
+          <form className="p-4 p-md-5  gola" onSubmit={handleSubmit}>
           <h2>Ingreso Docente:</h2>
             <div className="form-floating mb-3">
               

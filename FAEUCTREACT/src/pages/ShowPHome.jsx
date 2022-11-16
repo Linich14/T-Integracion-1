@@ -3,6 +3,7 @@ import { collection, getDocs } from 'firebase/firestore';
 
 import {db} from '../components/firebase';
 import './posts.css';
+import { Link } from 'react-router-dom';
 
 
 function ShowPHome() {
@@ -34,17 +35,21 @@ function ShowPHome() {
     }
   
     return(
-        <div>
-        <button onClick={()=> showPost()}>Mostrar Nuevas Noticias</button>
-        <ul>
-            {posts.map( post => <li className="list-group text-left"key={post.id}>
+        <div className='prepost'>
+        <button className='botonposteos'><Link to="/posts" >Hacer una publicación</Link></button>
+        <button onClick={()=> showPost()} className="botonposteos">Mostrar Nuevas Noticias</button>
+        <ul >
+            {posts.map( post => <li className="list-group  posteito"key={post.id}>
                                     <h1 className='text-center'>{post.data.tittle}</h1>
                                     <p className="text-center font-weight-light">{post.data.body}</p>
                                     <p className='text-center'>
                                     <img className='rounded' src={post.data.img}></img></p>
+                                    <p className='text-center'>Noticia por: {post.data.usuario}</p>
                                 </li>)}
         </ul>
         </div>
     )
 }
 export default ShowPHome;
+
+

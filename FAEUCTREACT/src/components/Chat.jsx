@@ -1,12 +1,14 @@
 import React, {useState, useEffect, useRef} from "react";
 import Message from "./Message";
 import SendMessage from "./SendMessage";
-import {db} from "./firebase";
+import {db, profesores} from "./firebase";
 import {query, collection, orderBy, onSnapshot} from 'firebase/firestore'
 import './chat.css';
+import { UserAuth } from '../context/AuthContext';
 
 
 const Chat = () => {
+    const { user } = UserAuth();
     const [messages, setMessages] = useState([]);
     const scroll = useRef();
 
@@ -23,21 +25,25 @@ const Chat = () => {
     }, []);
 
 return (
-
+    
         <div className='container ' id="C-1">
-        <div className='row' >
-                <main className=" col" id="C-3">
-                    
-                    {messages && messages.map((message) =>(
-                        <Message key={message.id} message={message}  />
-                    ))}
+        {profesores.includes(user?.uid) ?  (<div>Lo sentimos, los profesores no pueden acceder a la herramienta de Chat publico</div> ) : ( 
 
-                    <hr className=""/>
-                    <SendMessage scroll={scroll} />
+            <div className='row' >
+            <main className=" col py-4" id="C-3">
+                
+                {messages && messages.map((message) =>(
+                    <Message key={message.id} message={message}  />
+                ))}
 
-                </main>
-                <span ref={scroll}></span>
-                </div>
+            </main>
+            <hr className=""/>
+            <SendMessage scroll={scroll} />
+            <span ref={scroll}></span>
+            </div>
+
+        )}
+
         </div>
 
     )
