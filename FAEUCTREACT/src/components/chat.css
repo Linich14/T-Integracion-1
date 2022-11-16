@@ -1,16 +1,21 @@
 #C-1{
     margin-top: 100px;
-    height: 50%;
+    background-color: rgba(239, 247, 168, 0.89);
+    border-radius: 10px;
     width: 55%;
+    
 }
 
 #C-3{
+    max-height: 600px;
+    overflow: scroll;
+    overflow-x: hidden;
     border-radius: 20px;
-    background-color: rgba(239, 247, 168, 0.89);
+    
 }
 
 #botonmensaje{
-    align-items: center;
+    
     height: auto;
     width: 150px;
 }
@@ -21,16 +26,27 @@
     text-align: center;
 }
 #formita{
+    
     background-color: transparent;
     overflow: hidden;
+    
 }
 #formitacompleta{
-   margin-left: 50%;
+   margin-left: 30%;
 
 }
 
 #c-9{
-    position: flex;
+   margin-left: 10px;
+   margin-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 0.1px;
+    align-items: center;
+}
+#c10{
+    margin-left: 10px;
+
 }
 
 #cc-1{

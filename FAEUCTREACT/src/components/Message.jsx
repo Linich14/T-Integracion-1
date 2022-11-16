@@ -5,9 +5,7 @@ import './chat.css'
 import Photo from '../pages/fotosperfil'
 
 const style = {
-    message: 'text-justify',
-    name: 'absolute mt-[-4rem]',
-    sent: 'bg-warning rounded flex-row-reverse text-end float-right',
+    sent: 'bg-warning rounded  text-end float-right ',
     received:'bg-info rounded float-left '
 }
 
@@ -19,10 +17,14 @@ const Message = ({ message }) => {
   : `${style.received}` 
 
   return (  
-        <div className={`${messageClass}`} id="cc-1">
+        <div className={`${messageClass}`} >
+            <div className="" id="c-9">
             <Photo url={message.photo}></Photo>
-            <p className="" id='c-9'>{message.name}</p>
+            <p className="" id='c10'>{message.name}</p>
+            <hr />
             <p id="mensajito">{message.text}</p>
+            <hr />
+            </div>
         </div>
 
     )  

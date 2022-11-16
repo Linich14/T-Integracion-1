@@ -26,7 +26,7 @@ const SendMessage = ({scroll}) => {
     }
 
     return (
-        <div className="" id="formitacompleta">
+        <div className="mb-3" id="formitacompleta">
         <form onSubmit={sendMenssage} className="d-flex" id="formita">
             <input
             value={input}

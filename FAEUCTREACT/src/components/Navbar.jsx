@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
 import './navbar.css';
 import logouct from '../images/logo-uct.png'
+import {admin, profesores} from '../components/firebase'
 
 const Navbar = () => {
 
@@ -80,16 +81,42 @@ const Navbar = () => {
                 ) : (
                 <button className='btn y' >Inicia sesion Para ver</button>
                 )}
-          {user?.displayName ? (
+
+
+          {user?.displayName ? (<div>
+                      {profesores.includes(user?.uid) ? (<></>):(
+                      <>   
               <Link to='/chat' className="btn btn-primary">Chat</Link>
+              </>   
+                   )}
+                  </div>
                 ) : (
                 <button className='btn y' >Inicia sesion Para ver</button>
                 )}
+
+
+
+          {user?.displayName ? (<div>
+            {profesores.includes(user?.uid) ? (<></>):(
+            <>   
+            <Link to='/grupos' className="btn btn-primary">Grupos</Link>
+            </>     
+            )}
+              </div>
+                ) : (
+                <button className='btn y' >Inicia sesion Para ver</button>
+                )}
+
+
+              
+
           {user?.displayName ? (
               <Link to='/account' className="btn btn-primary"><img src={user.photoURL} alt="usuario" id="usuarito"/></Link>
                 ) : (
                 <button  className='btn y'>Inicia sesion para ver</button>
                 )}
+           {user?.uid === admin ?  (<Link to='/admin' className="btn btn-primary"> Panel de Control </Link> ) : (<div> </div> )}
+           {profesores.includes(user?.uid) || user?.uid === admin ?  (<Link to='/panelprofesores' className="btn btn-primary"> Control de Asignaturas </Link> ) : (<div></div> )}
             
           </div>
           

@@ -1,0 +1,90 @@
+#titulo-noti{
+
+    display: flex;
+    margin-top:7%;
+    margin-left: 30%;
+    margin-right: 30%;
+    color:black;
+
+
+}
+
+#noticia-text{
+    display:block;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 10px;
+    width: 35%;
+    height: 30%;
+}
+
+
+#cuerpo{
+    font-size: 20px;
+    margin-left: 21%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+
+}
+#titulo{
+    font-size: 20px;
+    margin-top: 1%;
+    margin-right: 20%;
+    margin-left: 21%;
+
+}
+
+
+#content{
+    font-size: 20px;
+    display: flex;
+    margin-right: 20%;
+    margin-left: 5%;
+
+}
+#txt-title{
+    font-size: 20px;
+    font-display: flex;
+    margin-left: 5%;
+    
+}
+
+#img{
+    font-size: 20px;
+    font-display: flex;
+    margin-right: 28%;
+    margin-left: 5%;
+}
+
+#arch{
+    margin-top: 1%;
+    font-size: 20px;
+    margin-right: 20%;
+    margin-left: 21%;
+    
+}
+#guardar{
+    position: center;
+    margin-top: 1%;
+    margin-left: 25%;
+}
+
+.posteito{
+    border-style: solid;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.botonposteos{
+    text-decoration: none;
+    background-color: aqua;
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-right: 50%;
+}
+
+.inputcito{
+
+    width: 500px; /* Se Asigna la dimension del ancho de ambos */
+
+}

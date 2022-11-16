@@ -1,0 +1,30 @@
+#barrita_busqueda{
+
+    position: relative;
+    margin-top: 10%;
+    width: 10%;
+    height: 100%;
+}
+
+#forma_busqueda{
+
+    margin-bottom: 10%;
+}
+#cajita{
+
+    display: flex;
+    width: 60%;
+    margin-top: 10%;
+    margin-right: 4%;
+    margin-left: 15%;
+    position: sticky;
+}
+
+#mandar{
+
+    display: flex;  
+    position: relative;
+    width: 20%;
+    margin-left: 75%;
+}
+

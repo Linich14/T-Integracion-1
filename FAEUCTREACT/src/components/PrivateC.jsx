@@ -1,5 +1,5 @@
 import React from "react";
-import Chat from './Chat';
+import Chat from '../components/chatsito nuevo/Chat1';
 import Sidebar from './Sidebar';
 
 import { AuthContextProvider } from '../context/AuthContext';

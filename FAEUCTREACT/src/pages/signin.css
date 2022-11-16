@@ -10,9 +10,13 @@
     height: 100px;
     align-items: center;
     border-radius: 40px;
-    background: rgba(130, 166, 233, 0.85);
+    background-color: rgba(239, 247, 168, 0.89);
+    /*background: rgba(130, 166, 233, 0.85);*/
 }
 
+.gola{
+    background-color: rgba(239, 247, 168, 0.89);
+}
 
 Googlebutton{
     max-width: 240px;

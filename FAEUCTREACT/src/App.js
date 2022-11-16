@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes ,Router} from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import Protected from './components/Protected';
 import Inicio from './pages/Inicio';
 import Navbar from './components/Navbar';
@@ -9,18 +9,26 @@ import Signin from './pages/Signin';
 import Home from './pages/Home';
 import Nosotros from './pages/nosotros'
 import Adminlogin from './pages/adminlogin';
-import PrivateC from './components/PrivateC';
-
+import Chat from './components/Chat';
+import Grupos from './pages/grupos'
 import Asignaturas from './pages/Asignaturas' 
 import Contacto from './pages/Contacto' 
+import PanelProfesores from './pages/controlasignaturas'
+
+import Posts from './pages/posts'
 import './App.css';
 import { AuthContextProvider } from './context/AuthContext';
 
 
+
+
+
 function App() {
+  
   return (
     <AuthContextProvider>
     <Navbar/>
+    
     <Routes>
       <Route path='/sudologin' element={<Adminlogin/>}/>
       <Route path='/nosotros' element={<Nosotros/>}/>
@@ -28,9 +36,13 @@ function App() {
       <Route path='/' element={<Inicio/>}/>
       <Route path='/signin' element={<Signin />} />
       <Route path='/home' element={<Protected> <Home/> </Protected>} />
-      <Route path='/chat' element={<Protected> <PrivateC/> </Protected>} />
+      <Route path='/posts' element={<Protected> <Posts/> </Protected>} />
+      <Route path='/grupos' element={<Protected> <Grupos/> </Protected>} />
+      <Route path='/chat' element={<Protected> <Chat/> </Protected>} />
       <Route path='/account' element={ <Protected> <Account/> </Protected> }/>
       <Route path='/asignaturas' element={<Protected> <Asignaturas/> </Protected>} />
+      <Route path='/admin' element={<Protected> <Adminlogin/> </Protected>} />
+      <Route path='/panelprofesores' element={<Protected> <PanelProfesores/> </Protected>} />
     </Routes>
     <Footer/>
     </AuthContextProvider>

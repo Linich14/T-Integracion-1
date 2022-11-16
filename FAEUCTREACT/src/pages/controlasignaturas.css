@@ -1,0 +1,10 @@
+.custom{
+ background-color: rgba(239, 247, 168, 0.89);
+ border-radius: 10px;
+ text-align: center;
+ 
+}
+
+.invis{
+    background-color:  rgba(239, 247, 168, 0.0);
+}

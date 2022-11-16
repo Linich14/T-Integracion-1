@@ -1,18 +1,18 @@
 import React from 'react';
-import { auth } from '../components/firebase'
 import { UserAuth } from '../context/AuthContext';
-import { useAuthState } from 'react-firebase-hooks/auth';
 import Photo from './fotosperfil'
 import './cuenta.css';
 import { getAuth, updateProfile } from "firebase/auth";
 import { useState } from 'react';
-import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import DatePicker from 'react-datepicker'; 
+import 'react-datepicker/dist/react-datepicker.css';
 
 
 
 
 const Account = () => {
 
+ 
 
   const { logOut, user } = UserAuth();
   const handleSignOut = async () => {
@@ -45,13 +45,23 @@ const Account = () => {
 
   return (
     <div className="container container-fluid" id="cuenta">
-      <div id='main' className='d-flex flex-column align-items-center justify-content: center '>
+      
+      <div id='main' className="d-flex flex-column align-items-center justify-content: center ">
         <h1>Perfil</h1>
-        <Photo url={user?.photoURL} />
+        <div id='foto'>
+          <Photo url={user?.photoURL} />
+        </div>
         <div id='nombre'>
           <p>Bienvenido, {user?.displayName}</p>
         </div>
       </div>
+
+
+
+     <div className='contenedor'>
+    <DatePicker selected={3}><p>Calendario</p></DatePicker>
+    </div><input type="button" value="Calendario" className='btn btn-primary'/>
+     
       <div id='mid' className='d-flex'>
         <div id='lista' className='d-flex'>
           <ul>
@@ -126,7 +136,7 @@ const Account = () => {
         }}>
           <p>Cambio de imagen: <input type="text" name="photo" placeholder='url de la imagen' /></p>
           <br />
-          <button type='submit'>Actualizar Imagen de Perfil</button>
+          <button id='boton' type='submit'>Actualizar Imagen de Perfil</button>
         </form>
         <p>*Para ver los datos actualizados se tiene que desconectar y volver a conectar</p>
       </div>
