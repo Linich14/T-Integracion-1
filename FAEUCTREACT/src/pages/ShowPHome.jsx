@@ -24,11 +24,9 @@ function ShowPHome() {
       const postCollection = collection(db, 'post-home')
       getDocs(postCollection)
         .then(response => {
-  
             const pst = response.docs.map(doc=> ({
                 data: doc.data(),
                 id: doc.id,
-
             }))
             setPost(pst)
         })
@@ -39,11 +37,12 @@ function ShowPHome() {
         <div>
         <button onClick={()=> showPost()}>Mostrar Nuevas Noticias</button>
         <ul>
-            {posts.map( post => <li key={post.id}>
-                                <h2>{post.data.tittle}</h2>
-                                <h4>{post.data.owner}</h4>
-                                <p>{post.data.body}</p>
-            </li>)}
+            {posts.map( post => <li className="list-group text-left"key={post.id}>
+                                    <h1 className='text-center'>{post.data.tittle}</h1>
+                                    <p className="text-center font-weight-light">{post.data.body}</p>
+                                    <p className='text-center'>
+                                    <img className='rounded' src={post.data.img}></img></p>
+                                </li>)}
         </ul>
         </div>
     )

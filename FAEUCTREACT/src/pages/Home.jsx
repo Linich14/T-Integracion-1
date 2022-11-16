@@ -16,8 +16,7 @@ const Home = () => {
     </div>
     
     <div className='col-10'>
-    <main className='' id='body'>
-      
+    <main className='' id='body'>    
         <div className="Articulo-mayor">
           <div>
             <ShowPHome/>
@@ -30,4 +29,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;

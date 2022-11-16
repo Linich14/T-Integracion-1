@@ -1,9 +1,6 @@
 import React from 'react'
 import './contacto.css';
-<<<<<<< HEAD
 import '../pages/Contacto'
-=======
->>>>>>> 7d74ff4f5a90a0645d9d530faf0e10a49eda8225
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';

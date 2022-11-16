@@ -14,39 +14,55 @@
     margin-left: 30%;
     margin-right: 30%;
     border-radius: 10px;
-    width: 40%;
-    height: 40%;
+    width: 35%;
+    height: 30%;
 }
 
 
 #cuerpo{
+    font-size: 20px;
     margin-left: 21%;
     margin-right: 10%;
     margin-bottom: 5%;
 
 }
 #titulo{
-    
+    font-size: 20px;
     margin-top: 1%;
-    margin-left: 10%;
-    margin-right: 5%;
+    margin-left: 9%;
+    margin-right: 9%;
 
 }
 
 
 #content{
-
+    font-size: 20px;
     display: flex;
     margin-right: 20%;
     margin-left: 5%;
 
 }
 #txt-title{
-
+    font-size: 20px;
     font-display: flex;
     margin-left: 5%;
 }
-#guardar{
 
+#img{
+    font-size: 20px;
+    font-display: flex;
+    margin-right: 28%;
+    margin-left: 5%;
+}
+
+#arch{
+    font-size: 20px;
+    margin-right: 20%;
+    margin-left: 21%;
+    
+}
+#guardar{
     position: center;
+    margin-top: 1%;
+    margin-left: 25%;
 }
